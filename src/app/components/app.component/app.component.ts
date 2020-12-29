@@ -10,7 +10,7 @@ import { TranslateService } from '@ngx-translate/core';
 export class AppComponent {
   title = 'veggieweb';
 
-  public currentPath:string ='';
+  public contentPath:string ='';
 
   constructor(private router: Router, private translateService: TranslateService){
     translateService.setDefaultLang('en');
@@ -18,7 +18,7 @@ export class AppComponent {
 
     router.events.subscribe(event=>{
       if(event instanceof NavigationEnd)
-        this.currentPath = event.url;
+        this.contentPath = event.url;
     });
   }
 }
