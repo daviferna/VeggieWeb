@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -9,8 +10,15 @@ import { TranslateService } from '@ngx-translate/core';
 export class AppComponent {
   title = 'veggieweb';
 
-  constructor(translateService: TranslateService){
+  public currentPath:string ='';
+
+  constructor(private router: Router, private translateService: TranslateService){
     translateService.setDefaultLang('en');
     translateService.use('es');
+
+    router.events.subscribe(event=>{
+      if(event instanceof NavigationEnd)
+        this.currentPath = event.url;
+    });
   }
 }
