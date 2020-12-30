@@ -1,0 +1,14 @@
+[
+    {
+        "id":0,
+        "name":"tomate",
+        "description":"Descripción española del tomate",
+        "photoUrl":"https://cdn.pixabay.com/photo/2018/07/06/08/49/tomato-3520004_960_720.jpg"
+    },
+    {
+        "id":0,
+        "name":"patata",
+        "description":"Descripción española de la patata",
+        "photoUrl":"https://cdn.pixabay.com/photo/2017/05/20/19/51/potatoes-2329648_960_720.jpg"
+    }
+]

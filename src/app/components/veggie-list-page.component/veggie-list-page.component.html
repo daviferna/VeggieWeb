@@ -1,1 +1,21 @@
-<p>veggie-list-page works!</p>
+<div>
+    <!-- Section title -->
+    <header>
+        <h2>{{'veggieList.title' | translate}}</h2>
+    </header>
+    <!-- Description -->
+    <p>{{'veggieList.description'| translate}} </p>
+
+    <!-- All items -->
+    <ul>
+        <li *ngFor="let veggie of veggies">
+            <img [src]="veggie.photoUrl"/>
+            <header>
+                <h3>{{veggie.name}}</h3>
+            </header>      
+            <p>{{veggie.description}}</p>
+        </li>
+    </ul>
+</div>
+
+

@@ -11,4 +11,16 @@
             <li><a routerLink="../contact">{{'navigation.contact' | translate}}</a></li>
         </ul>
     </nav>
+    <!-- Languages menu -->
+    <nav>
+        <header>Idiomas</header>
+        <ul>
+            <li lang="es">
+                <button (click)="changeLanguage('es')">Español</button>
+            </li>
+            <li lang="en">
+                <button (click)="changeLanguage('en')">English</button>
+            </li>
+        </ul>
+    </nav>
 </header>
