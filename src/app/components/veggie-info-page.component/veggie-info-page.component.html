@@ -1,3 +1,44 @@
 <div>
-    {{veggie}}
+
+    <!-- Section title -->
+    <header>
+        <h2>{{veggie?.name}}</h2>
+    </header>
+
+    <!-- Description -->
+    <p>{{veggie?.description}} </p>
+
+    <img [src]="veggie?.photoUrl"/>
+
+    <!-- Veggie data -->
+    <h3>{{'veggieSection.data' | translate}}</h3>
+    <table>
+        <thead>
+                <td>{{'veggieSection.plantSeasson' | translate}}</td>
+                <td>{{'veggieSection.harvestSeasson' | translate}}</td>
+                <td>{{'veggieSection.minHumidity' | translate}}</td>
+                <td>{{'veggieSection.maxHumidity' | translate}}</td>
+                <td>{{'veggieSection.minTemperature' | translate}}</td>
+                <td>{{'veggieSection.maxTemperature' | translate}}</td>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{veggie?.plantSeasson}}</td>
+                <td>{{veggie?.harvestSeasson}}</td>
+                <td>{{veggie?.minHumidity}}</td>
+                <td>{{veggie?.maxHumidity}}</td>
+                <td>{{veggie?.minTemperature}}</td>
+                <td>{{veggie?.maxTemperature}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Instructions -->
+    <h3>{{'veggieSection.instructions' | translate}}</h3>
+    <ul>
+        <li *ngFor="let instruction of veggie?.plantInstructions">
+            <p>{{instruction.description}}</p>
+            <img [src]="instruction.photoUrl"/>
+        </li>
+    </ul>
 </div>

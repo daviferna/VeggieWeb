@@ -11,15 +11,15 @@
     "maxTemperature":"40º",
     "plantInstructions": [
         {
-            "descriptions":"Primer paso",
+            "description":"Primer paso",
             "photoUrl":""
         },
         {
-            "descriptions":"Segundo paso",
+            "description":"Segundo paso",
             "photoUrl":""
         },
         {
-            "descriptions":"Tercer paso",
+            "description":"Tercer paso",
             "photoUrl":""
         }
     ] 
