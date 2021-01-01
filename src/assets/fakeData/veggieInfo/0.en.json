@@ -1,0 +1,26 @@
+{
+    "id":0,
+    "name":"tomate",
+    "description":"Tomate English description",
+    "photoUrl":"https://cdn.pixabay.com/photo/2018/07/06/08/49/tomato-3520004_960_720.jpg",
+    "plantSeasson":"Summer",
+    "harvestSeasson":"Winter",
+    "minHumidity":"20%",
+    "maxHumidity":"30%",
+    "minTemperature":"10º",
+    "maxTemperature":"40º",
+    "plantInstructions": [
+        {
+            "descriptions":"First step",
+            "photoUrl":""
+        },
+        {
+            "descriptions":"Second step",
+            "photoUrl":""
+        },
+        {
+            "descriptions":"Third step",
+            "photoUrl":""
+        }
+    ] 
+}

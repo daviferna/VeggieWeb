@@ -1,7 +1,7 @@
 import { Component, NgZone, OnInit } from '@angular/core';
 import { LangChangeEvent, TranslateService } from '@ngx-translate/core';
 import { VeggieService } from 'src/app/services/veggie.service/veggie.service';
-import { VeggieItem } from 'src/app/types/veggieItem';
+import { Veggie } from 'src/app/types/veggie';
 
 @Component({
   selector: 'app-veggie-list-page',
@@ -10,7 +10,7 @@ import { VeggieItem } from 'src/app/types/veggieItem';
 })
 export class VeggieListPageComponent implements OnInit {
 
-  veggies: VeggieItem[] = [];
+  veggies: Veggie[] = [];
 
   constructor(
     private zone:NgZone,

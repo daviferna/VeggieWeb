@@ -1,0 +1,26 @@
+{
+    "id":0,
+    "name":"tomate",
+    "description":"Descripción española del tomate",
+    "photoUrl":"https://cdn.pixabay.com/photo/2018/07/06/08/49/tomato-3520004_960_720.jpg",
+    "plantSeasson":"Verano",
+    "harvestSeasson":"Invierno",
+    "minHumidity":"20%",
+    "maxHumidity":"30%",
+    "minTemperature":"10º",
+    "maxTemperature":"40º",
+    "plantInstructions": [
+        {
+            "descriptions":"Primer paso",
+            "photoUrl":""
+        },
+        {
+            "descriptions":"Segundo paso",
+            "photoUrl":""
+        },
+        {
+            "descriptions":"Tercer paso",
+            "photoUrl":""
+        }
+    ] 
+}

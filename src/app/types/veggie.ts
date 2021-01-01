@@ -1,4 +1,4 @@
-export class VeggieItem{
+export class Veggie{
     id: number;
     name:string;
     description:string;
