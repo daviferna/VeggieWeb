@@ -18,7 +18,7 @@ export class VeggieListPageComponent implements OnInit {
     private veggieService:VeggieService) { }
 
   ngOnInit(): void {
-    this.getVeggies('es');
+    this.getVeggies(this.translateService.currentLang);
     this.onLangChange(); 
   }
 

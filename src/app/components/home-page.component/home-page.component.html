@@ -1,1 +1,7 @@
-<p>home-page works!</p>
+<div>
+    <div *ngFor="let homeDataItem of homeData">
+        <img [src]="homeDataItem.imageUrl"/>
+        <h3>{{homeDataItem.title}}</h3>
+        <p>{{homeDataItem.content}}</p>
+    </div>
+</div>

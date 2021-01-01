@@ -18,6 +18,8 @@ import { FooterComponent } from '../components/footer.component/footer.component
 //Services
 import { VeggieService } from '../services/veggie.service/veggie.service';
 import { ContactService } from '../services/contact.service/contact.service';
+import { HomeService } from '../services/home.service/home.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -32,11 +34,13 @@ import { ContactService } from '../services/contact.service/contact.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AppTranslateModule
+    AppTranslateModule,
+    BrowserAnimationsModule
   ],
   providers: [
     VeggieService,
-    ContactService
+    ContactService,
+    HomeService
   ],
   bootstrap: [AppComponent]
 })

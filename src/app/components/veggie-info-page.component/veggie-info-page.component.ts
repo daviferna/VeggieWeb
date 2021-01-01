@@ -23,7 +23,7 @@ export class VeggieInfoPageComponent implements OnInit {
     }
 
   ngOnInit(): void {
-    this.getVeggie('es', this.id);
+    this.getVeggie(this.translateService.currentLang, this.id);
     this.onLangChange(); 
   }
 

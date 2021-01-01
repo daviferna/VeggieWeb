@@ -1,5 +1,4 @@
 <div>
-
     <!-- Section title -->
     <header>
         <h2>{{veggie?.name}}</h2>
@@ -11,15 +10,15 @@
     <img [src]="veggie?.photoUrl"/>
 
     <!-- Veggie data -->
-    <h3>{{'veggieSection.data' | translate}}</h3>
+    <h3>{{'veggieInfoPage.data' | translate}}</h3>
     <table>
         <thead>
-                <td>{{'veggieSection.plantSeasson' | translate}}</td>
-                <td>{{'veggieSection.harvestSeasson' | translate}}</td>
-                <td>{{'veggieSection.minHumidity' | translate}}</td>
-                <td>{{'veggieSection.maxHumidity' | translate}}</td>
-                <td>{{'veggieSection.minTemperature' | translate}}</td>
-                <td>{{'veggieSection.maxTemperature' | translate}}</td>
+                <td>{{'veggieInfoPage.plantSeasson' | translate}}</td>
+                <td>{{'veggieInfoPage.harvestSeasson' | translate}}</td>
+                <td>{{'veggieInfoPage.minHumidity' | translate}}</td>
+                <td>{{'veggieInfoPage.maxHumidity' | translate}}</td>
+                <td>{{'veggieInfoPage.minTemperature' | translate}}</td>
+                <td>{{'veggieInfoPage.maxTemperature' | translate}}</td>
         </thead>
         <tbody>
             <tr>
@@ -34,7 +33,7 @@
     </table>
 
     <!-- Instructions -->
-    <h3>{{'veggieSection.instructions' | translate}}</h3>
+    <h3>{{'veggieInfoPage.instructions' | translate}}</h3>
     <ul>
         <li *ngFor="let instruction of veggie?.plantInstructions">
             <p>{{instruction.description}}</p>

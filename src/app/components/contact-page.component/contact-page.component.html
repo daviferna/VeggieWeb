@@ -1,1 +1,19 @@
-<p>contact-page works!</p>
+<div>
+    <!-- Section title -->
+    <header>
+        <h2>{{'contactPage.title' | translate}}</h2>
+    </header>
+    <!-- Description -->
+    <p>{{'contactPage.description'| translate}} </p>
+
+    <form>
+        <!-- Nombre -->
+        <input type="text" placeholder="{{'contactPage.namePlaceholder' | translate}}" required/>
+        <!-- Email -->
+        <input type="email" placeholder="{{'contactPage.emailPlaceholder' | translate}}" required/>
+        <!-- Content -->
+        <textarea placeholder="{{'contactPage.contactPlaceholder' | translate}}" required></textarea>
+        <!-- Button -->
+        <input type="submit"/>
+    </form>
+</div>

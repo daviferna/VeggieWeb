@@ -1,7 +1,7 @@
 {
     "id":0,
-    "name":"tomate",
-    "description":"Tomate English description",
+    "name":"potato",
+    "description":"Potato English description",
     "photoUrl":"https://cdn.pixabay.com/photo/2018/07/06/08/49/tomato-3520004_960_720.jpg",
     "plantSeasson":"Summer",
     "harvestSeasson":"Winter",
