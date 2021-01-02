@@ -1,5 +1,8 @@
+//Modules
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AppMaterialModule } from './app-material.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppTranslateModule } from './app-translate.module';
@@ -19,7 +22,7 @@ import { FooterComponent } from '../components/footer.component/footer.component
 import { VeggieService } from '../services/veggie.service/veggie.service';
 import { ContactService } from '../services/contact.service/contact.service';
 import { HomeService } from '../services/home.service/home.service';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -33,9 +36,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     AppTranslateModule,
-    BrowserAnimationsModule
+    AppMaterialModule
   ],
   providers: [
     VeggieService,
