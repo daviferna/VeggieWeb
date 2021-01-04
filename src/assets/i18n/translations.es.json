@@ -1,5 +1,14 @@
 {
     "navigation":{
         "home":"inicio"
+    },
+
+    "contactPage":{
+        "title":"Contáctanos",
+        "description":"Puedes usar este formulario para sugerir nuevas hortalizas para añadir a nuestra página. De este modo, puedes ayudar a otras personas que busquen la misma información.",
+        "nameInput":"Tu nombre",
+        "emailInput":"Tu correo electrónico",
+        "suggestionInput":"Tu sugerencia",
+        "submitButton":"Enviar formulario"
     }
 }

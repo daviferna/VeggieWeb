@@ -8,12 +8,24 @@
 
     <form>
         <!-- Nombre -->
-        <input type="text" placeholder="{{'contactPage.namePlaceholder' | translate}}" required/>
+        <mat-form-field class="example-full-width">
+            <mat-label>{{'contactPage.nameInput' | translate}}</mat-label>
+            <input matInput>
+        </mat-form-field>
+        <br>
         <!-- Email -->
-        <input type="email" placeholder="{{'contactPage.emailPlaceholder' | translate}}" required/>
+        <mat-form-field class="example-full-width">
+            <mat-label>{{'contactPage.emailInput' | translate}}</mat-label>
+            <input matInput>
+        </mat-form-field>
+        <br>
         <!-- Content -->
-        <textarea placeholder="{{'contactPage.contactPlaceholder' | translate}}" required></textarea>
+        <mat-form-field class="example-full-width">
+            <mat-label>{{'contactPage.suggestionInput' | translate}}</mat-label>
+            <textarea matInput></textarea>
+        </mat-form-field>
+        <br>
         <!-- Button -->
-        <input type="submit"/>
+        <button mat-raised-button color="primary">{{'contactPage.submitButton' | translate}}</button>
     </form>
 </div>
