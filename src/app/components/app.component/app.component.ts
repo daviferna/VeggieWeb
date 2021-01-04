@@ -14,5 +14,12 @@ export class AppComponent{
     translateService.use('es');
   }
 
+  changeLanguage(language:string):void{
+    this.translateService.use(language);
+  }
+
+  isLanguageSelected(language:string):Boolean{
+    return this.translateService.currentLang == language;
+  }
 
 }

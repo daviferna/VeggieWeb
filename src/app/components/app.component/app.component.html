@@ -1,6 +1,23 @@
-<div id="skip">
-    <a [routerLink]="" fragment="content" >{{'accessibility.skipToContent' | translate}}</a>
+<div fxLayout="row" fxLayoutAlign="flex-end center">
+    <div id="skip" fxLayout="row" fxLayoutAlign="space-between center" class="horizontal-padding">
+        <a [routerLink]="" fragment="content" class="mat-body">{{'accessibility.skipToContent' | translate}}</a>
+    </div>
+    <!-- Languages menu -->
+    <nav class="language-menu" fxLayout="row" fxLayoutAlign="flex-start center">
+        <header fxLayout="row" fxLayoutAlign="flex-start center">
+            <p class="mat-body">{{'navigation.languages' | translate}}</p>
+        </header>
+        <ul fxLayout="row" fxLayoutAlign="flex-start center">
+            <li lang="es">
+                <button mat-button color="primary" disabled="{{isLanguageSelected('es')}}" (click)="changeLanguage('es')">Español</button>
+            </li>
+            <li lang="en">
+                <button mat-button color="primary" disabled="{{isLanguageSelected('en')}}" (click)="changeLanguage('en')">English</button>
+            </li>
+        </ul>
+    </nav>
 </div>
+
 <header-component></header-component>
 <router-outlet id="content"></router-outlet>
 <footer-component></footer-component>
