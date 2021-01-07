@@ -1,7 +1,26 @@
-<div>
-    <div *ngFor="let homeDataItem of homeData">
+<div fxLayout="column" fxLayoutAlign="flex-start stretch">
+    <div *ngFor="let homeDataItem of homeData" fxLayout="row" fxLayoutAlign="flex-start flex-start" class="home-item vertical-padding">
+        <div fxFlex class="home-item-content">
+            <mat-card>
+                <mat-card-content>
+                    <div fxLayout="row" fxLayoutAlign="flex-start flex-start">
+                        <div class="home-item-image">
+                            <img [src]="homeDataItem.imageUrl">
+                        </div>
+                        <div class="horizontal-padding" fxFlex>
+                            <mat-card-title>{{homeDataItem.title}}</mat-card-title>
+                            <mat-card-subtitle>{{homeDataItem.subtitle}}</mat-card-subtitle>
+                            <p>{{homeDataItem.content}}</p>
+                        </div>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+
+    <!-- <div *ngFor="let homeDataItem of homeData">
         <img [src]="homeDataItem.imageUrl"/>
         <h3>{{homeDataItem.title}}</h3>
         <p>{{homeDataItem.content}}</p>
-    </div>
+    </div> -->
 </div>

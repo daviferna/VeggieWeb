@@ -2,13 +2,29 @@
     {
         "id":0,
         "name":"tomate",
+        "type":"fruta",
         "description":"Descripción española del tomate",
         "photoUrl":"https://cdn.pixabay.com/photo/2018/07/06/08/49/tomato-3520004_960_720.jpg"
     },
     {
         "id":1,
         "name":"patata",
+        "type":"tubérculo",
         "description":"Descripción española de la patata",
         "photoUrl":"https://cdn.pixabay.com/photo/2017/05/20/19/51/potatoes-2329648_960_720.jpg"
+    },
+    {
+        "id":2,
+        "name":"zanahoria",
+        "type":"tubérculo",
+        "description":"Descripción española de la zanahoria",
+        "photoUrl":"https://cdn.pixabay.com/photo/2015/12/08/01/00/carrots-1082251_960_720.jpg"
+    },
+    {
+        "id":2,
+        "name":"lechuga",
+        "type":"vedura",
+        "description":"Descripción española de la lechuga",
+        "photoUrl":"https://cdn.pixabay.com/photo/2018/07/24/23/19/salad-3560274_960_720.jpg"
     }
 ]

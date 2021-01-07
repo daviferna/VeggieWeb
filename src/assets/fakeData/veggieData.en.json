@@ -2,13 +2,29 @@
     {
         "id":0,
         "name":"tomate",
+        "type":"fruit",
         "description":"English description of tomate",
         "photoUrl":"https://cdn.pixabay.com/photo/2018/07/06/08/49/tomato-3520004_960_720.jpg"
     },
     {
         "id":1,
         "name":"potato",
+        "type":"tuber",
         "description":"English description of potato",
         "photoUrl":"https://cdn.pixabay.com/photo/2017/05/20/19/51/potatoes-2329648_960_720.jpg"
+    },
+    {
+        "id":2,
+        "name":"carrot",
+        "type":"tuber",
+        "description":"English description of carrot",
+        "photoUrl":"https://cdn.pixabay.com/photo/2015/12/08/01/00/carrots-1082251_960_720.jpg"
+    },
+    {
+        "id":3,
+        "name":"lettuce",
+        "type":"vegetable",
+        "description":"English description of lettuce",
+        "photoUrl":"https://cdn.pixabay.com/photo/2018/07/24/23/19/salad-3560274_960_720.jpg"
     }
 ]
