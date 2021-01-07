@@ -1,4 +1,4 @@
-<div>
+<div class="content-section">
     <!-- Section title -->
     <header>
         <h2>{{'veggieListPage.title' | translate}}</h2>
@@ -7,16 +7,29 @@
     <p>{{'veggieListPage.description'| translate}} </p>
 
     <!-- All items -->
-    <ul>
+    <ul  class="veggie-grid">
         <li *ngFor="let veggie of veggies">
-            <img [src]="veggie.photoUrl"/>
+            <mat-card class="example-card">
+                <img mat-card-image [src]="veggie.photoUrl" alt="veggie.altPhoto">
+                <mat-card-content>
+                    <mat-card-title>{{veggie.name}}</mat-card-title>
+                    <mat-card-subtitle>{{veggie.type}}</mat-card-subtitle>
+                  <p>{{veggie.description}}</p>
+                </mat-card-content>
+                <mat-card-actions>
+                    <a mat-button [routerLink]="['../../veggie', veggie.id]">{{'veggieListPage.readMore'}}</a>
+                </mat-card-actions>
+              </mat-card>
+
+            <!-- <img [src]="veggie.photoUrl"/>
             <header>
                 <h3>{{veggie.name}}</h3>
             </header>      
             <p>{{veggie.description}}</p>
-            <a [routerLink]="['../../veggie', veggie.id]">Ver más</a>
+            <a [routerLink]="['../../veggie', veggie.id]">Ver más</a> -->
         </li>
     </ul>
+
 </div>
 
 

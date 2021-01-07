@@ -19,5 +19,10 @@
 </div>
 
 <header-component></header-component>
-<router-outlet id="content"></router-outlet>
+<div fxLayout="column" fxLayoutAlign="flex-start center">
+    <div class="main-layout-content">
+        <router-outlet id="content"></router-outlet>    
+    </div>
+</div>
+
 <footer-component></footer-component>
