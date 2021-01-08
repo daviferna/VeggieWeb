@@ -1,10 +1,10 @@
-<div>
+<div class="content-section">
     <!-- Section title -->
     <h1>{{'contactPage.title' | translate}}</h1>
     <!-- Description -->
     <p>{{'contactPage.description'| translate}} </p>
 
-    <form [formGroup]="commentForm" (submit)="submitForm()" #formDirective="ngForm">
+    <form fxLayout="column" fxLayoutAlign="flex-start stretch" [formGroup]="commentForm" (submit)="submitForm()" #formDirective="ngForm">
         <!-- Nombre -->
         <mat-form-field appearance="outline">
             <mat-label>{{'contactPage.nameInput' | translate}}</mat-label>

@@ -1,40 +1,26 @@
 <header>
-    <mat-toolbar color="primary">
-        <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-          <mat-icon>menu</mat-icon>
-        </button>
-        <span>VeggieWeb</span>
-        <span class="example-spacer"></span>
-        <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-          <mat-icon>favorite</mat-icon>
-        </button>
-        <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-          <mat-icon>share</mat-icon>
-        </button>
+    <mat-toolbar color="primary" fxLayout="row" fxLayoutAlign="space-between center">     
+        <!-- Logo & title -->
+        <div>
+            <img>
+            <span>VeggieWeb</span>
+        </div>
+        
+        <div fxLayout="row" fxLayoutAlign="flex-start center">
+            <!-- Navigation menu -->
+            <nav class="navigation-menu">
+                <ul fxLayout="row" fxLayoutAlign="flex-start center">
+                    <li><a mat-button routerLink="../home">{{'navigation.home' | translate}}</a></li>
+                    <li><a mat-button routerLink="../veggie/list">{{'navigation.veggies' | translate}}</a></li>
+                    <li><a mat-button routerLink="../contact">{{'navigation.contact' | translate}}</a></li>
+                </ul>
+            </nav>
+            
+            
+        </div>
       </mat-toolbar>
 
-    <!-- Logo -->
-    <div>
-        <img>
-    </div>
-    <!-- Navigation menu -->
-    <nav>
-        <ul>
-            <li><a routerLink="../home">{{'navigation.home' | translate}}</a></li>
-            <li><a routerLink="../veggie/list">{{'navigation.veggies' | translate}}</a></li>
-            <li><a routerLink="../contact">{{'navigation.contact' | translate}}</a></li>
-        </ul>
-    </nav>
-    <!-- Languages menu -->
-    <nav>
-        <header>Idiomas</header>
-        <ul>
-            <li lang="es">
-                <button (click)="changeLanguage('es')">Español</button>
-            </li>
-            <li lang="en">
-                <button (click)="changeLanguage('en')">English</button>
-            </li>
-        </ul>
-    </nav>
+    
+    
+    
 </header>

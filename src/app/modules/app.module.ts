@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppMaterialModule } from './app-material.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppTranslateModule } from './app-translate.module';
@@ -39,7 +40,8 @@ import { HomeService } from '../services/home.service/home.service';
     BrowserAnimationsModule,
     AppRoutingModule,
     AppTranslateModule,
-    AppMaterialModule
+    AppMaterialModule,
+    FlexLayoutModule
   ],
   providers: [
     VeggieService,

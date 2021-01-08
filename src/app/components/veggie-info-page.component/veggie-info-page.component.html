@@ -1,43 +1,74 @@
-<div>
+<div class="content-section">
+    <!-- Navigation -->
+    <nav fxLayout="row" fxLayoutAlign="flex-start center" class="vertical-padding">
+        <a mat-button color="primary" routerLink="../../veggie/list">{{'navigation.veggies' | traslate}</a>
+        <a mat-button disabled>{{veggie?.name}}</a>
+    </nav>
     <!-- Section title -->
     <header>
         <h2>{{veggie?.name}}</h2>
     </header>
 
-    <!-- Description -->
-    <p>{{veggie?.description}} </p>
-
-    <img [src]="veggie?.photoUrl"/>
-
-    <!-- Veggie data -->
-    <h3>{{'veggieInfoPage.data' | translate}}</h3>
-    <table>
-        <thead>
-                <td>{{'veggieInfoPage.plantSeasson' | translate}}</td>
-                <td>{{'veggieInfoPage.harvestSeasson' | translate}}</td>
-                <td>{{'veggieInfoPage.minHumidity' | translate}}</td>
-                <td>{{'veggieInfoPage.maxHumidity' | translate}}</td>
-                <td>{{'veggieInfoPage.minTemperature' | translate}}</td>
-                <td>{{'veggieInfoPage.maxTemperature' | translate}}</td>
-        </thead>
-        <tbody>
-            <tr>
-                <td>{{veggie?.plantSeasson}}</td>
-                <td>{{veggie?.harvestSeasson}}</td>
-                <td>{{veggie?.minHumidity}}</td>
-                <td>{{veggie?.maxHumidity}}</td>
-                <td>{{veggie?.minTemperature}}</td>
-                <td>{{veggie?.maxTemperature}}</td>
-            </tr>
-        </tbody>
-    </table>
-
+    <div fxLayout="column" fxLAyoutAlign="start-flex stretch" fxLayout.gt-xs="row" fxLayoutAlign.gt-x="flex-start flex-start" fxLayoutGap="20px">
+        <div fxLayout="column" fxLayoutAlign="flex-start stretch" fxFlex="60">      
+            <h3>{{'veggieInfoPage.description' | translate}}</h3>    
+            <div class="veggie-photo">
+                <img [src]="veggie?.photoUrl"/>
+            </div>
+            <!-- Description -->
+            <p>{{veggie?.description}} </p>   
+        </div>
+        <div fxLayout="column" fxLayoutAlign="flex-start stretch" fxFlex="3">
+            <!-- Veggie data -->
+            <h3>{{'veggieInfoPage.data' | translate}}</h3>
+            <table>
+                <thead>
+                        <td></td>
+                        <td></td>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{'veggieInfoPage.plantSeasson' | translate}}</td>
+                        <td>{{veggie?.plantSeasson}}</td>                    
+                    </tr>
+                    <tr>
+                        <td>{{'veggieInfoPage.harvestSeasson' | translate}}</td>
+                        <td>{{veggie?.harvestSeasson}}</td>
+                    </tr>
+                    <tr>
+                        <td>{{'veggieInfoPage.minHumidity' | translate}}</td>
+                        <td>{{veggie?.minHumidity}}</td>
+                    </tr>
+                    <tr>
+                        <td>{{'veggieInfoPage.maxHumidity' | translate}}</td>
+                        <td>{{veggie?.maxHumidity}}</td>
+                    </tr>
+                    <tr>
+                        <td>{{'veggieInfoPage.minTemperature' | translate}}</td>
+                        <td>{{veggie?.minTemperature}}</td>
+                    </tr>
+                    <tr>
+                        <td>{{'veggieInfoPage.maxTemperature' | translate}}</td>
+                        <td>{{veggie?.maxTemperature}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
     <!-- Instructions -->
     <h3>{{'veggieInfoPage.instructions' | translate}}</h3>
-    <ul>
-        <li *ngFor="let instruction of veggie?.plantInstructions">
-            <p>{{instruction.description}}</p>
-            <img [src]="instruction.photoUrl"/>
-        </li>
-    </ul>
+    <p>{{'veggieInfoPage.instructionsDescription' | translate}}</p>
+    <mat-accordion multi>
+        <mat-expansion-panel *ngFor="let instruction of veggie?.plantInstructions">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+                {{instruction.title}}
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+      
+          <p>{{instruction.description}}</p>
+          <img [src]="instruction.photoUrl" class="instruction-photo"/>
+        </mat-expansion-panel>
+      </mat-accordion>
+
 </div>

@@ -11,14 +11,17 @@
     "maxTemperature":"40º",
     "plantInstructions": [
         {
+            "title":"First step",
             "description":"First step",
             "photoUrl":"https://cdn.pixabay.com/photo/2014/07/02/06/47/wheat-381848_960_720.jpg"
         },
         {
+            "title":"First step",
             "description":"Second step",
             "photoUrl":""
         },
         {
+            "title":"First step",
             "description":"Third step",
             "photoUrl":""
         }
