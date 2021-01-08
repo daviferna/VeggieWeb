@@ -1,15 +1,26 @@
-.home-item{
-    position: relative;
-}
-
-.home-item-image{
-    position: relative;
-    background: #000;
-    border-radius: 50%;  
-    overflow: hidden;
-    width: 300px;
+.main-title{
     height: 300px;
-
+    background-color: #DDD;
 }
 
+.why-veggieweb-section{
+    background: #3f51b5;
+    background-image: url("https://cdn.pixabay.com/photo/2015/09/18/11/36/plantation-945400_960_720.jpg");
+    margin:20px 0;
+    h2{
+        color: #FFF;
+    }
+}
 
+.why-veggieweb-reasons{  
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 10px;
+    padding: 30px 10px;
+}
+
+.home-item{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
+}

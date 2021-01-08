@@ -11,14 +11,17 @@
     "maxTemperature":"40º",
     "plantInstructions": [
         {
-            "description":"First step",
+            "title":"First step",
+            "description":"First step description",
             "photoUrl":"https://cdn.pixabay.com/photo/2014/07/02/06/47/wheat-381848_960_720.jpg"
         },
         {
-            "description":"Second step",
+            "title":"Second step",
+            "description":"Second step description",
             "photoUrl":"https://cdn.pixabay.com/photo/2020/05/31/04/36/investment-5241253_960_720.jpg"
         },
         {
+            "title":"Third step",
             "description":"Third step",
             "photoUrl":"https://cdn.pixabay.com/photo/2016/08/03/01/09/carrot-1565597_960_720.jpg"
         }
