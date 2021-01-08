@@ -4,11 +4,24 @@
     },
 
     "contactPage":{
+        "tabTitle":"Contáctanos | Veggie",
+
         "title":"Contáctanos",
-        "description":"Puedes usar este formulario para sugerir nuevas hortalizas para añadir a nuestra página. De este modo, puedes ayudar a otras personas que busquen la misma información.",
-        "nameInput":"Tu nombre",
-        "emailInput":"Tu correo electrónico",
-        "suggestionInput":"Tu sugerencia",
-        "submitButton":"Enviar formulario"
+        "description":"Puedes usar este formulario para ponerte en contacto con nosotros y sugerir nuevas hortalizas para añadir o realizar comentarios generales sobre la página. De este modo, nos ayudas y ayudas a otras personas que visiten la página en un futuro.",
+        "nameInput":"Nombre",
+        "emailInput":"Correo electrónico",
+        "suggestionSelector":"Tipo de comentario",
+        "suggestionInput":"Comentario",
+        "submitButton":"Enviar comentario",
+
+        "requiredFieldHint":"Requerido",
+        "requiredNameError":"El nombre es un campo <strong>requerido</strong>",
+        "requiredEmailError":"El correo electrónico es un campo <strong>requerido</strong>",
+        "requiredTypeError":"El tipo de comentario es un campo <strong>requerido</strong>",
+        "requiredCommentError":"El comentario es un campo <strong>requerido</strong>",
+        "emailFormatError":"Por favor, introduce una dirección de correo electrónico válida",
+
+        "submitFormValid":"Su comentario se han enviado correctamente. Muchas gracias.",
+        "submitFormInvalid":"No se pudo enviar el comentario, algunos de los campos no están correctamente cumplimentados."
     }
 }

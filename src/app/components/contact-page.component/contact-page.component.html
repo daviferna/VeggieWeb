@@ -1,31 +1,45 @@
 <div>
     <!-- Section title -->
-    <header>
-        <h2>{{'contactPage.title' | translate}}</h2>
-    </header>
+    <h1>{{'contactPage.title' | translate}}</h1>
     <!-- Description -->
     <p>{{'contactPage.description'| translate}} </p>
 
-    <form>
+    <form [formGroup]="commentForm" (submit)="submitForm()" #formDirective="ngForm">
         <!-- Nombre -->
-        <mat-form-field class="example-full-width">
+        <mat-form-field appearance="outline">
             <mat-label>{{'contactPage.nameInput' | translate}}</mat-label>
-            <input matInput>
+            <input type="text" matInput [formControl]="nameFormControl" required>
+            <mat-error *ngIf="nameFormControl.hasError('required')" innerHTML="{{'contactPage.requiredNameError' | translate}}"></mat-error>
         </mat-form-field>
         <br>
         <!-- Email -->
-        <mat-form-field class="example-full-width">
+        <mat-form-field appearance="outline">
             <mat-label>{{'contactPage.emailInput' | translate}}</mat-label>
-            <input matInput>
+            <input type="email" matInput [formControl]="emailFormControl" required>
+            <!--<mat-hint>{{'contactPage.requiredFieldHint' | translate}}</mat-hint>-->
+            <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')" innerHTML="{{'contactPage.emailFormatError' | translate}}"></mat-error>
+            <mat-error *ngIf="emailFormControl.hasError('required')" innerHTML="{{'contactPage.requiredEmailError' | translate}}"></mat-error>
         </mat-form-field>
         <br>
-        <!-- Content -->
-        <mat-form-field class="example-full-width">
+        <!-- Selección del tipo de sugerencia -->
+        <mat-form-field appearance="outline">
+            <mat-label>{{'contactPage.suggestionSelector' | translate}}</mat-label>
+            <mat-select [formControl]="typeFormControl" required>
+                <mat-option value="vegetable">Suggest a new vegetable</mat-option>
+                <mat-option value="correction">Suggest a correction</mat-option>
+                <mat-option value="other">Other comments</mat-option>
+            </mat-select>
+            <mat-error *ngIf="typeFormControl.hasError('required')" innerHTML="{{'contactPage.requiredTypeError' | translate}}"></mat-error>
+        </mat-form-field>
+        <br>
+        <!-- Descripción de la sugerencia -->
+        <mat-form-field appearance="outline">
             <mat-label>{{'contactPage.suggestionInput' | translate}}</mat-label>
-            <textarea matInput></textarea>
+            <textarea type="text" matInput rows="4" [formControl]="commentFormControl" required></textarea>
+            <mat-error *ngIf="commentFormControl.hasError('required')" innerHTML="{{'contactPage.requiredCommentError' | translate}}"></mat-error>
         </mat-form-field>
         <br>
-        <!-- Button -->
-        <button mat-raised-button color="primary">{{'contactPage.submitButton' | translate}}</button>
+        <!-- Botón de envío de formulario -->
+        <button type="submit" mat-raised-button color="primary">{{'contactPage.submitButton' | translate}}</button>
     </form>
 </div>

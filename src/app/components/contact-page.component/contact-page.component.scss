@@ -1,23 +1,25 @@
-div {
-    header {
-        margin-left: 24px;
+h1 {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+p {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1.2em;
+}
+
+form {
+    margin-top: 50px;
+    text-align: center;
+
+    mat-form-field {
+        width: 80%;
+        max-width: 800px;
     }
 
-    p {
-        margin-left: 24px;
-    }
-
-    form {
-        text-align: center;
-        
-        mat-form-field {
-            width: 90%;
-            max-width: 800px;
-        }
-
-        button {
-            width: 90%;
-            max-width: 800px;
-        }
+    button {
+        width: 80%;
+        max-width: 800px;
     }
 }
