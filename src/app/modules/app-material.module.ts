@@ -13,7 +13,7 @@ import { MatTableModule } from '@angular/material/table';
         MatToolbarModule,
         MatIconModule,
         MatButtonModule,
-        MatInputModule
+        MatInputModule,
         MatCardModule,
         MatExpansionModule,
         MatTableModule
@@ -22,7 +22,7 @@ import { MatTableModule } from '@angular/material/table';
         MatToolbarModule,
         MatIconModule,
         MatButtonModule,
-        MatInputModule
+        MatInputModule,
         MatCardModule,
         MatExpansionModule,
         MatTableModule
