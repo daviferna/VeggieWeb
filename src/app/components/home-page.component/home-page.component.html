@@ -1,7 +1,61 @@
-<div>
-    <div *ngFor="let homeDataItem of homeData">
-        <img [src]="homeDataItem.imageUrl"/>
-        <h3>{{homeDataItem.title}}</h3>
-        <p>{{homeDataItem.content}}</p>
+<div fxLayout="column" fxLayoutAlign="flex-start stretch" >
+    <div class="main-title horizontal-padding">
+        <h1>{{'homePage.title' | translate}}</h1>
+        <p>{{'homePage.description' | translate}}</p>
+    </div>
+
+    <div fxLayout="column" fxLayoutAlign="flex-start stretch" class="why-veggieweb-section">
+        <div class="horizontal-padding">
+            <h2>{{'homePage.whyVeggieWeb' | translate}}</h2>
+        </div>
+        <div class="why-veggieweb-reasons">
+            <mat-card>
+                <mat-card-content>
+                    <h3>
+                        <mat-card-title>Vida más sana</mat-card-title>
+                    </h3>
+                <p>las verduras son bien sanitas y te ayudan</p>
+                </mat-card-content>
+            </mat-card>
+            <mat-card>
+                <mat-card-content>
+                    <h3>
+                        <mat-card-title>Más tiempo para tí</mat-card-title>
+                    </h3>
+                <p>Ahorra tiempo con nuestros consejos</p>
+                </mat-card-content>
+            </mat-card>
+            <mat-card>
+                <mat-card-content>
+                    <h3>
+                        <mat-card-title>Tiempos de cultivo</mat-card-title>
+                    </h3>
+                <p>Encuentra los tiempos de cultivo perfectos</p>
+                </mat-card-content>
+            </mat-card>
+            <mat-card>
+                <mat-card-content>
+                    <h3>
+                        <mat-card-title>Tiempos de cultivo</mat-card-title>
+                    </h3>
+                <p>Encuentra los tiempos de cultivo perfectos</p>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+
+    <div class="home-item">
+        <mat-card *ngFor="let homeDataItem of homeData">
+            <img mat-card-image [src]="homeDataItem.imageUrl" alt="homeDataItem.altPhoto">
+            <mat-card-content>
+                <h3>
+                    <mat-card-title>{{homeDataItem.title}}</mat-card-title>
+                </h3>
+            <p>{{homeDataItem.title}}</p>
+            </mat-card-content>
+            <mat-card-actions>
+                <a mat-flat-button color="primary">{{'veggieListPage.readMore'}}</a>
+            </mat-card-actions>
+        </mat-card>
     </div>
 </div>
