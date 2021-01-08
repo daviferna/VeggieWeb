@@ -9,27 +9,28 @@
     <!-- All items -->
     <ul  class="veggie-grid">
         <li *ngFor="let veggie of veggies">
-            <mat-card class="example-card">
+            <mat-card>
                 <img mat-card-image [src]="veggie.photoUrl" alt="veggie.altPhoto">
                 <mat-card-content>
-                    <mat-card-title>{{veggie.name}}</mat-card-title>
+                    <h3>
+                        <mat-card-title>{{veggie.name}}</mat-card-title>
+                    </h3>
                     <mat-card-subtitle>{{veggie.type}}</mat-card-subtitle>
                   <p>{{veggie.description}}</p>
                 </mat-card-content>
                 <mat-card-actions>
-                    <a mat-button [routerLink]="['../../veggie', veggie.id]">{{'veggieListPage.readMore'}}</a>
+                    <a mat-button [routerLink]="['../../veggie', veggie.id]">{{'veggieListPage.readMore' | translate}}</a>
                 </mat-card-actions>
               </mat-card>
-
-            <!-- <img [src]="veggie.photoUrl"/>
-            <header>
-                <h3>{{veggie.name}}</h3>
-            </header>      
-            <p>{{veggie.description}}</p>
-            <a [routerLink]="['../../veggie', veggie.id]">Ver más</a> -->
         </li>
     </ul>
 
+    <div fxLayout="column" fxLAyoutAlign="flex-start center" class="vertical-padding">
+        <p class="text-center">{{'veggieListPage.wantMoreDescription' | translate}}</p>
+        <div fxLayout="row" fxLayoutAlign="center center">
+            <a mat-flat-button color="primary" href="../../contact">{{'veggieListPage.wantMore' | translate}}</a>
+        </div>
+    </div>
 </div>
 
 
