@@ -1,4 +1,4 @@
-<div>
+<div class="content-section">
     <!-- Section title -->
     <header>
         <h2>{{'contactPage.title' | translate}}</h2>
@@ -6,21 +6,21 @@
     <!-- Description -->
     <p>{{'contactPage.description'| translate}} </p>
 
-    <form>
+    <form fxLayout="column" fxLayoutAlign="flex-start stretch">
         <!-- Nombre -->
-        <mat-form-field class="example-full-width">
+        <mat-form-field>
             <mat-label>{{'contactPage.nameInput' | translate}}</mat-label>
-            <input matInput>
+            <input matInput >
         </mat-form-field>
         <br>
         <!-- Email -->
-        <mat-form-field class="example-full-width">
+        <mat-form-field >
             <mat-label>{{'contactPage.emailInput' | translate}}</mat-label>
             <input matInput>
         </mat-form-field>
         <br>
         <!-- Content -->
-        <mat-form-field class="example-full-width">
+        <mat-form-field >
             <mat-label>{{'contactPage.suggestionInput' | translate}}</mat-label>
             <textarea matInput></textarea>
         </mat-form-field>
