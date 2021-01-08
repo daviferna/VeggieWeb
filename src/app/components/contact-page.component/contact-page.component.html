@@ -1,4 +1,4 @@
-<div>
+<div class="content-section">
     <!-- Section title -->
     <header>
         <h2>{{'contactPage.title' | translate}}</h2>
@@ -6,14 +6,26 @@
     <!-- Description -->
     <p>{{'contactPage.description'| translate}} </p>
 
-    <form>
+    <form fxLayout="column" fxLayoutAlign="flex-start stretch">
         <!-- Nombre -->
-        <input type="text" placeholder="{{'contactPage.namePlaceholder' | translate}}" required/>
+        <mat-form-field>
+            <mat-label>{{'contactPage.nameInput' | translate}}</mat-label>
+            <input matInput >
+        </mat-form-field>
+        <br>
         <!-- Email -->
-        <input type="email" placeholder="{{'contactPage.emailPlaceholder' | translate}}" required/>
+        <mat-form-field >
+            <mat-label>{{'contactPage.emailInput' | translate}}</mat-label>
+            <input matInput>
+        </mat-form-field>
+        <br>
         <!-- Content -->
-        <textarea placeholder="{{'contactPage.contactPlaceholder' | translate}}" required></textarea>
+        <mat-form-field >
+            <mat-label>{{'contactPage.suggestionInput' | translate}}</mat-label>
+            <textarea matInput></textarea>
+        </mat-form-field>
+        <br>
         <!-- Button -->
-        <input type="submit"/>
+        <button mat-raised-button color="primary">{{'contactPage.submitButton' | translate}}</button>
     </form>
 </div>

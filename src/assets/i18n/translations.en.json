@@ -1,5 +1,14 @@
 {
     "navigation":{
         "home":"home"
+    },
+
+    "contactPage":{
+        "title":"Contact us",
+        "description":"You can use this form to suggest new vegetables to add to our web page. This way, you can help other users looking for information.",
+        "nameInput":"Your name",
+        "emailInput":"Your email",
+        "suggestionInput":"Your suggestion",
+        "submitButton":"Submit form"
     }
 }
