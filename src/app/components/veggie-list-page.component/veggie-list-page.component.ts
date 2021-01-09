@@ -23,7 +23,6 @@ export class VeggieListPageComponent implements OnInit {
   }
 
   getVeggies(language:string):void{
-    console.log(language);
     this.veggieService.getVeggies(language).subscribe(
       res=>{
         this.zone.run(()=>{

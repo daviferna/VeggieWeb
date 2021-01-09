@@ -1,4 +1,5 @@
-import { Component, Inject } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
+import { ActivatedRoute} from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { DOCUMENT } from '@angular/common'
 import { HelperService } from 'src/app/services/helper.service/helper.service';
@@ -10,10 +11,19 @@ import { HelperService } from 'src/app/services/helper.service/helper.service';
 })
 export class AppComponent{
   title = 'veggieweb';
+  
+  @ViewChild("skipToContentTarget") skipToContentTarget?: ElementRef;
+  @ViewChild("firstElementTarget") firstElementTarget?: ElementRef;
 
-  constructor(private helperService:HelperService) {
+  constructor(private router:ActivatedRoute, private helperService:HelperService) {
     this.helperService.setDefaultLanguage('en');
-    this.helperService.changeLanguage('es');    
+    this.helperService.changeLanguage('es');  
+
+    this.router.fragment.subscribe(fragment=>{
+      if(!!fragment)
+        this.focusContentElement();
+    });
+
   }
 
   changeLanguage(language:string):void{
@@ -22,6 +32,15 @@ export class AppComponent{
 
   isLanguageSelected(language:string):Boolean{
     return this.helperService.getCurrentLang() == language;
+  }
+
+  focusContentElement():void{
+    this.skipToContentTarget?.nativeElement.focus();
+  }
+
+  clearFocus():void{
+    console.log("adsf");
+    this.firstElementTarget?.nativeElement.focus();
   }
 
 }

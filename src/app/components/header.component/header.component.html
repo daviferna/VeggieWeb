@@ -10,9 +10,9 @@
             <!-- Navigation menu -->
             <nav class="navigation-menu">
                 <ul fxLayout="row" fxLayoutAlign="flex-start center">
-                    <li><a mat-button routerLink="../home">{{'navigation.home' | translate}}</a></li>
-                    <li><a mat-button routerLink="../veggie/list">{{'navigation.veggies' | translate}}</a></li>
-                    <li><a mat-button routerLink="../contact">{{'navigation.contact' | translate}}</a></li>
+                    <li><a mat-button routerLink="../home" (click)="clearFocus()">{{'navigation.home' | translate}}</a></li>
+                    <li><a mat-button routerLink="../veggie/list" (click)="clearFocus()">{{'navigation.veggies' | translate}}</a></li>
+                    <li><a mat-button routerLink="../contact" (click)="clearFocus()">{{'navigation.contact' | translate}}</a></li>
                 </ul>
             </nav>
             
