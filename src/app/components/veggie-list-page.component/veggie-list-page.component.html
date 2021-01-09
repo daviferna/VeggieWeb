@@ -10,7 +10,7 @@
     <ul  class="veggie-grid">
         <li *ngFor="let veggie of veggies">
             <mat-card>
-                <img mat-card-image [src]="veggie.photoUrl" alt="veggie.altPhoto">
+                <img mat-card-image [src]="veggie.photoUrl" alt={{veggie.photoDescription}}>
                 <mat-card-content>
                     <h3>
                         <mat-card-title>{{veggie.name}}</mat-card-title>

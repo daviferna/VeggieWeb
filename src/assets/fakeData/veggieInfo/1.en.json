@@ -1,8 +1,9 @@
 {
     "id":0,
-    "name":"potato",
+    "name":"Potato",
     "description":"Potato English description",
-    "photoUrl":"https://cdn.pixabay.com/photo/2018/07/06/08/49/tomato-3520004_960_720.jpg",
+    "photoUrl":"https://cdn.pixabay.com/photo/2017/05/20/19/51/potatoes-2329648_960_720.jpg",
+    "photoDescription":"A set of potatoes",
     "plantSeasson":"Summer",
     "harvestSeasson":"Winter",
     "minHumidity":"20%",

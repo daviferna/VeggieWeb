@@ -1,8 +1,9 @@
 {
     "id":0,
-    "name":"tomate",
+    "name":"Tomato",
     "description":"Tomate English description",
     "photoUrl":"https://cdn.pixabay.com/photo/2018/07/06/08/49/tomato-3520004_960_720.jpg",
+    "photoDescription":"Three red tomatoes",
     "plantSeasson":"Summer",
     "harvestSeasson":"Winter",
     "minHumidity":"20%",

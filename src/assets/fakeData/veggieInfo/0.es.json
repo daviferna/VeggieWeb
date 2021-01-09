@@ -3,6 +3,7 @@
     "name":"tomate",
     "description":"Descripción española del tomate",
     "photoUrl":"https://cdn.pixabay.com/photo/2018/07/06/08/49/tomato-3520004_960_720.jpg",
+    "photoDescription":"Tres tomates rojos",
     "plantSeasson":"Verano",
     "harvestSeasson":"Invierno",
     "minHumidity":"20%",
