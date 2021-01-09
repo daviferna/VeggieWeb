@@ -4,11 +4,24 @@
     },
 
     "contactPage":{
+        "tabTitle":"Contact us | Veggie",
+        
         "title":"Contact us",
         "description":"You can use this form to suggest new vegetables to add to our web page. This way, you can help other users looking for information.",
-        "nameInput":"Your name",
-        "emailInput":"Your email",
-        "suggestionInput":"Your suggestion",
-        "submitButton":"Submit form"
+        "nameInput":"Name",
+        "emailInput":"Email",
+        "suggestionSelector":"Type of comment",
+        "suggestionInput":"Comment",
+        "submitButton":"Submit comment",
+
+        "requiredFieldHint":"Required",
+        "requiredNameError":"The name is <strong>required</strong>",
+        "requiredEmailError":"The email is <strong>required</strong>",
+        "requiredTypeError":"The type of comment is <strong>required</strong>",
+        "requiredCommentError":"The comment is <strong>required</strong>",
+        "emailFormatError":"Please, enter a valid email address",
+
+        "submitFormValid":"Your comment has been correctly submitted. Thank you.",
+        "submitFormInvalid":"Your comment couldn't be submitted, some of the fields are not correctly filled."
     }
 }
