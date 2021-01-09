@@ -13,16 +13,11 @@ export class ContactPageComponent implements OnInit {
   commentForm!: FormGroup;
   @ViewChild('formDirective') formDirective!: NgForm;
 
-  translate: TranslateService;
-  titleService: Title;
-
-  constructor( translate: TranslateService, titleService: Title ) {
-    this.translate = translate;
-    this.titleService = titleService;
+  constructor( private translateService: TranslateService, private titleService: Title ) {
   }
 
   ngOnInit(): void {
-    this.translate.get('contactPage.tabTitle').subscribe((translated: string) => {
+    this.translateService.get('contactPage.tabTitle').subscribe((translated: string) => {
       this.titleService.setTitle(translated);
     }),
     this.commentForm = new FormGroup({
@@ -52,10 +47,10 @@ export class ContactPageComponent implements OnInit {
 
   submitForm() {
     if (this.commentForm.valid) {
-      alert(this.translate.instant('contactPage.submitFormValid'));
+      alert(this.translateService.instant('contactPage.submitFormValid'));
       this.formDirective.resetForm();
     } else {
-      alert(this.translate.instant('contactPage.submitFormInvalid'));
+      alert(this.translateService.instant('contactPage.submitFormInvalid'));
     }
   }
 
