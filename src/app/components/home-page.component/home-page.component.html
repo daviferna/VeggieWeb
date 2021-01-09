@@ -1,6 +1,6 @@
-<div fxLayout="column" fxLayoutAlign="flex-start stretch" >
-    <div class="main-title horizontal-padding">
-        <h1>{{'homePage.title' | translate}}</h1>
+<div fxLayout="column" fxLayoutAlign="flex-start stretch" class="content-section">
+    <div fxLayout="column" fxLayoutAlign="center flex-start" class="main-title horizontal-padding" >
+        <h1 class="mat-display-3 no-margin">{{'homePage.title' | translate}}</h1>
         <p>{{'homePage.description' | translate}}</p>
     </div>
 
@@ -44,18 +44,21 @@
         </div>
     </div>
 
-    <div class="home-item">
-        <mat-card *ngFor="let homeDataItem of homeData">
-            <img mat-card-image [src]="homeDataItem.imageUrl" alt="homeDataItem.altPhoto">
-            <mat-card-content>
-                <h3>
-                    <mat-card-title>{{homeDataItem.title}}</mat-card-title>
-                </h3>
-            <p>{{homeDataItem.title}}</p>
-            </mat-card-content>
-            <mat-card-actions>
-                <a mat-flat-button color="primary">{{'veggieListPage.readMore'}}</a>
-            </mat-card-actions>
-        </mat-card>
+    <div fxLayout="column" fxLayoutAlign="flex-start stretch">
+        <h2>{{'homePage.aboutUs' | translate}}</h2>
+        <div class="home-item">
+            <mat-card *ngFor="let homeDataItem of homeData">
+                <img mat-card-image [src]="homeDataItem.imageUrl" alt="homeDataItem.altPhoto">
+                <mat-card-content>
+                    <h3>
+                        <mat-card-title>{{homeDataItem.title}}</mat-card-title>
+                    </h3>
+                <p>{{homeDataItem.title}}</p>
+                </mat-card-content>
+                <mat-card-actions>
+                    <a mat-flat-button color="primary">{{'veggieListPage.readMore'}}</a>
+                </mat-card-actions>
+            </mat-card>
+        </div>
     </div>
 </div>

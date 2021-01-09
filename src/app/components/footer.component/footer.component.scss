@@ -1,0 +1,40 @@
+footer{
+    background: #DDD;
+}
+
+.footer-layout{
+    width:100%;    
+    max-width: 900px;
+    padding: 40px 0 0 0;
+}
+
+a{
+    color:#000;
+}
+
+.social{
+    ul{
+        list-style: none;
+        padding: 0;
+
+        li{
+            margin-right: 1em;
+        }
+
+        i{
+            font-size: 2rem;
+            margin: 0 2px;
+        }
+    }
+}
+
+.footer-navigation{
+    ul{
+        list-style: none;
+        padding: 0;
+
+        li{
+            padding: 2px 0;
+        }
+    }
+}
