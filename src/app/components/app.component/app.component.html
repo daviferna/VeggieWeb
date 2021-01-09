@@ -1,6 +1,6 @@
 <div fxLayout="row" fxLayoutAlign="flex-end center">
     <div id="skip" fxLayout="row" fxLayoutAlign="space-between center" class="horizontal-padding">
-        <a [routerLink]="" fragment="content" class="mat-body">{{'accessibility.skipToContent' | translate}}</a>
+        <a [routerLink]="" fragment="content" class="mat-body" (click)="focusContentElement()">{{'accessibility.skipToContent' | translate}}</a>
     </div>
     <!-- Languages menu -->
     <nav class="language-menu" fxLayout="row" fxLayoutAlign="flex-start center">
@@ -20,9 +20,9 @@
 
 <header-component></header-component>
 <div fxLayout="column" fxLayoutAlign="flex-start center">
-    <div class="main-layout-content">
-        <router-outlet id="content"></router-outlet>    
-    </div>
+    <main class="main-layout-content" id="content" #skipToContentAnchor tabindex="0">
+        <router-outlet></router-outlet>    
+    </main>
 </div>
 
 <footer-component></footer-component>

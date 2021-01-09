@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -8,6 +8,8 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class AppComponent{
   title = 'veggieweb';
+  
+  @ViewChild("skipToContentAnchor") skipToContentLink?: ElementRef;
 
   constructor(private translateService: TranslateService){
     translateService.setDefaultLang('en');
@@ -20,6 +22,10 @@ export class AppComponent{
 
   isLanguageSelected(language:string):Boolean{
     return this.translateService.currentLang == language;
+  }
+
+  focusContentElement():void{
+    this.skipToContentLink?.nativeElement.focus();
   }
 
 }
