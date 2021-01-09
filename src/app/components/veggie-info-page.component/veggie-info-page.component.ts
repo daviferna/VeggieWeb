@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { LangChangeEvent, TranslateService } from '@ngx-translate/core';
+import { HelperService } from 'src/app/services/helper.service/helper.service';
 import { VeggieService } from 'src/app/services/veggie.service/veggie.service';
 import { CompleteVeggie } from 'src/app/types/completeVeggie';
 
@@ -15,6 +16,7 @@ export class VeggieInfoPageComponent implements OnInit {
   veggie? : CompleteVeggie;
 
   constructor(
+    private helperService: HelperService,
     private translateService: TranslateService, 
     private actRoute: ActivatedRoute,
     private veggieService:VeggieService) 
@@ -42,6 +44,10 @@ export class VeggieInfoPageComponent implements OnInit {
     this.translateService.onLangChange.subscribe((langChangeEvent: LangChangeEvent) => {
       this.getVeggie(langChangeEvent.lang, this.id);
     });
+  }
+
+  clearFocus():void{
+    this.helperService.clearFocus();
   }
 
 }

@@ -1,4 +1,5 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { HelperService } from 'src/app/services/helper.service/helper.service';
 
 @Component({
   selector: 'header-component',
@@ -6,17 +7,14 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-
-  @Output()
-  onClearFocus: EventEmitter<any> = new EventEmitter();
-
-  constructor() { }
+  
+  constructor(private helperService: HelperService) { }
 
   ngOnInit(): void {
   }
 
   clearFocus():void{
-    this.onClearFocus.emit('clear');
+    this.helperService.clearFocus();
   }
 
 }

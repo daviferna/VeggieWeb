@@ -24,10 +24,15 @@ export class AppComponent{
         this.focusContentElement();
     });
 
+    this.helperService.onClearFocus.subscribe((targ:any)=>{
+      this.clearFocus();
+    })
+
   }
 
   changeLanguage(language:string):void{
     this.helperService.changeLanguage(language); 
+    this.clearFocus();
   }
 
   isLanguageSelected(language:string):Boolean{
@@ -39,7 +44,6 @@ export class AppComponent{
   }
 
   clearFocus():void{
-    console.log("adsf");
     this.firstElementTarget?.nativeElement.focus();
   }
 

@@ -1,5 +1,6 @@
 import { Component, NgZone, OnInit } from '@angular/core';
 import { LangChangeEvent, TranslateService } from '@ngx-translate/core';
+import { HelperService } from 'src/app/services/helper.service/helper.service';
 import { VeggieService } from 'src/app/services/veggie.service/veggie.service';
 import { Veggie } from 'src/app/types/veggie';
 
@@ -14,6 +15,7 @@ export class VeggieListPageComponent implements OnInit {
 
   constructor(
     private zone:NgZone,
+    private helperService: HelperService,
     private translateService: TranslateService, 
     private veggieService:VeggieService) { }
 
@@ -41,4 +43,7 @@ export class VeggieListPageComponent implements OnInit {
     });
   }
 
+  clearFocus():void{
+    this.helperService.clearFocus();
+  }
 }

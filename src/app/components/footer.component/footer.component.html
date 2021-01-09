@@ -35,10 +35,10 @@
                     <li>
                         <h3>{{'footer.navigation' | translate}}</h3>
                         <ul>
-                            <li><a routerLink="../home">{{'navigation.home' | translate}}</a></li>
-                            <li><a routerLink="../veggie/list">{{'navigation.veggies' | translate}}</a></li>
-                            <li><a routerLink="../contact">{{'navigation.contact' | translate}}</a></li>
-                            <li><a routerLink="../sitemap">{{'navigation.sitemap' | translate}}</a></li>
+                            <li><a routerLink="../home" (click)="clearFocus()">{{'navigation.home' | translate}}</a></li>
+                            <li><a routerLink="../veggie/list" (click)="clearFocus()">{{'navigation.veggies' | translate}}</a></li>
+                            <li><a routerLink="../contact" (click)="clearFocus()">{{'navigation.contact' | translate}}</a></li>
+                            <li><a routerLink="../sitemap" (click)="clearFocus()">{{'navigation.sitemap' | translate}}</a></li>
                         </ul>
                     </li>          
                     <li>

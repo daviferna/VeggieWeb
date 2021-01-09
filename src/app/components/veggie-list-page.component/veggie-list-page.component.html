@@ -19,7 +19,7 @@
                   <p>{{veggie.description}}</p>
                 </mat-card-content>
                 <mat-card-actions>
-                    <a mat-button [routerLink]="['../../veggie', veggie.id]">{{'veggieListPage.readMore' | translate}}</a>
+                    <a mat-button [routerLink]="['../../veggie', veggie.id]" (click)="clearFocus()">{{'veggieListPage.readMore' | translate}}</a>
                 </mat-card-actions>
               </mat-card>
         </li>
@@ -28,7 +28,7 @@
     <div fxLayout="column" fxLAyoutAlign="flex-start center" class="vertical-padding">
         <p class="text-center">{{'veggieListPage.wantMoreDescription' | translate}}</p>
         <div fxLayout="row" fxLayoutAlign="center center">
-            <a mat-flat-button color="primary" href="../../contact">{{'veggieListPage.wantMore' | translate}}</a>
+            <a mat-flat-button color="primary" href="../../contact" (click)="clearFocus()">{{'veggieListPage.wantMore' | translate}}</a>
         </div>
     </div>
 </div>

@@ -1,7 +1,7 @@
 <div class="content-section">
     <!-- Navigation -->
     <nav fxLayout="row" fxLayoutAlign="flex-start center" class="vertical-padding">
-        <a mat-button color="primary" routerLink="../../veggie/list">{{'navigation.veggies' | traslate}</a>
+        <a mat-button color="primary" routerLink="../../veggie/list" (click)="clearFocus()">{{'navigation.veggies' | traslate}</a>
         <a mat-button disabled>{{veggie?.name}}</a>
     </nav>
     <!-- Section title -->

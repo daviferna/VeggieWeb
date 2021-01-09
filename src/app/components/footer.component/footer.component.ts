@@ -15,10 +15,16 @@ export class FooterComponent implements OnInit {
 
   changeLanguage(language:string):void{
     this.helperService.changeLanguage(language); 
+    this.clearFocus();
   }
 
   isLanguageSelected(language:string):Boolean{
     return this.helperService.getCurrentLang() == language;
   }
+
+  clearFocus():void{
+    this.helperService.clearFocus();
+  }
+
 
 }
