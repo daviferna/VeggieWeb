@@ -15,7 +15,8 @@
 .why-veggieweb-reasons{  
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 10px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
     padding: 30px 10px;
 }
 
@@ -28,5 +29,17 @@
     img{
         height: 200px;
         object-fit: cover;
+    }
+}
+
+@media(max-width:900px){
+    .why-veggieweb-reasons{  
+        grid-template-columns: repeat(2, 1fr);
+    }
+ }
+
+ @media(max-width:450px){
+    .why-veggieweb-reasons{  
+        grid-template-columns: repeat(1, 1fr);
     }
 }
