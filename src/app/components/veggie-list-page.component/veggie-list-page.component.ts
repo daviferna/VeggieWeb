@@ -1,5 +1,6 @@
 import { Component, NgZone, OnInit } from '@angular/core';
 import { LangChangeEvent, TranslateService } from '@ngx-translate/core';
+import { HelperService } from 'src/app/services/helper.service/helper.service';
 import { VeggieService } from 'src/app/services/veggie.service/veggie.service';
 import { Veggie } from 'src/app/types/veggie';
 
@@ -23,7 +24,6 @@ export class VeggieListPageComponent implements OnInit {
   }
 
   getVeggies(language:string):void{
-    console.log(language);
     this.veggieService.getVeggies(language).subscribe(
       res=>{
         this.zone.run(()=>{

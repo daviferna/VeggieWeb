@@ -6,7 +6,7 @@
     </nav>
     <!-- Section title -->
     <header>
-        <h2>{{veggie?.name}}</h2>
+        <h1>{{veggie?.name}}</h1>
     </header>
 
     <div fxLayout="column" fxLAyoutAlign="start-flex stretch" fxLayout.gt-xs="row" fxLayoutAlign.gt-x="flex-start flex-start" fxLayoutGap="20px">
@@ -23,8 +23,8 @@
             <h3>{{'veggieInfoPage.data' | translate}}</h3>
             <table>
                 <thead>
-                        <td></td>
-                        <td></td>
+                        <td>{{'veggieInfoPage.tableHeaderDataName' | translate}}</td>
+                        <td>{{'veggieInfoPage.tableHeaderDataValue' | translate}}</td>
                 </thead>
                 <tbody>
                     <tr>
