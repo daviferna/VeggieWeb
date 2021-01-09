@@ -2,6 +2,7 @@ import { Component, NgZone, OnInit } from '@angular/core';
 import { LangChangeEvent, TranslateService } from '@ngx-translate/core';
 import { VeggieService } from 'src/app/services/veggie.service/veggie.service';
 import { Veggie } from 'src/app/types/veggie';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-veggie-list-page',
@@ -15,11 +16,16 @@ export class VeggieListPageComponent implements OnInit {
   constructor(
     private zone:NgZone,
     private translateService: TranslateService, 
-    private veggieService:VeggieService) { }
+    private veggieService:VeggieService,
+    private titleService: Title
+  ) { }
 
   ngOnInit(): void {
     this.getVeggies(this.translateService.currentLang);
-    this.onLangChange(); 
+    this.onLangChange();
+    this.translateService.get('veggieListPage.tabTitle').subscribe((translated: string) => {
+      this.titleService.setTitle(translated);
+    })
   }
 
   getVeggies(language:string):void{
