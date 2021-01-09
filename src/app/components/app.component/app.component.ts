@@ -1,4 +1,5 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
+import { ActivatedRoute} from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -9,11 +10,20 @@ import { TranslateService } from '@ngx-translate/core';
 export class AppComponent{
   title = 'veggieweb';
   
-  @ViewChild("skipToContentAnchor") skipToContentLink?: ElementRef;
+  @ViewChild("skipToContentTarget") skipToContentTarget?: ElementRef;
 
-  constructor(private translateService: TranslateService){
+  @ViewChild("firstElementTarget") firstElementTarget?: ElementRef;
+
+  constructor(private translateService: TranslateService, 
+              private router:ActivatedRoute){
     translateService.setDefaultLang('en');
     translateService.use('es');
+
+    this.router.fragment.subscribe(fragment=>{
+      if(!!fragment)
+        this.focusContentElement();
+    });
+
   }
 
   changeLanguage(language:string):void{
@@ -25,7 +35,11 @@ export class AppComponent{
   }
 
   focusContentElement():void{
-    this.skipToContentLink?.nativeElement.focus();
+    this.skipToContentTarget?.nativeElement.focus();
+  }
+
+  clearFocus():void{
+    this.firstElementTarget?.nativeElement.focus();
   }
 
 }
