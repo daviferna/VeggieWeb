@@ -22,5 +22,11 @@
 .home-item{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 10px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+
+    img{
+        height: 200px;
+        object-fit: cover;
+    }
 }
