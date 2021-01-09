@@ -1,6 +1,7 @@
 import { Component, Inject } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { DOCUMENT } from '@angular/common'
+import { HelperService } from 'src/app/services/helper.service/helper.service';
 
 @Component({
   selector: 'app-root',
@@ -10,19 +11,17 @@ import { DOCUMENT } from '@angular/common'
 export class AppComponent{
   title = 'veggieweb';
 
-  constructor(private translateService: TranslateService, @Inject(DOCUMENT) private document: Document) {
-    translateService.setDefaultLang('en');
-    translateService.use('es');
-    this.document.documentElement.lang = this.translateService.currentLang;
+  constructor(private helperService:HelperService) {
+    this.helperService.setDefaultLanguage('en');
+    this.helperService.changeLanguage('es');    
   }
 
   changeLanguage(language:string):void{
-    this.translateService.use(language);
-    this.document.documentElement.lang = language;
+    this.helperService.changeLanguage(language); 
   }
 
   isLanguageSelected(language:string):Boolean{
-    return this.translateService.currentLang == language;
+    return this.helperService.getCurrentLang() == language;
   }
 
 }

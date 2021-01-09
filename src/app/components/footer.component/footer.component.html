@@ -30,13 +30,30 @@
                 </div>
             </div>
 
-            <nav class="footer-navigation" >
-                <ul>
-                    <li><a routerLink="../home">{{'navigation.home' | translate}}</a></li>
-                    <li><a routerLink="../veggie/list">{{'navigation.veggies' | translate}}</a></li>
-                    <li><a routerLink="../contact">{{'navigation.contact' | translate}}</a></li>
-                    <li><a routerLink="../sitemap">{{'navigation.sitemap' | translate}}</a></li>
+            <nav class="footer-navigation">
+                <ul fxLayout="row" fxLayoutAlign="flex-start flex-start" fxLayoutGap="20px">
+                    <li>
+                        <h3>{{'footer.navigation' | translate}}</h3>
+                        <ul>
+                            <li><a routerLink="../home">{{'navigation.home' | translate}}</a></li>
+                            <li><a routerLink="../veggie/list">{{'navigation.veggies' | translate}}</a></li>
+                            <li><a routerLink="../contact">{{'navigation.contact' | translate}}</a></li>
+                            <li><a routerLink="../sitemap">{{'navigation.sitemap' | translate}}</a></li>
+                        </ul>
+                    </li>          
+                    <li>
+                        <h3>{{'footer.languages' | translate}}</h3>
+                        <ul>
+                            <li lang="es">
+                                <button mat-button color="primary" disabled="{{isLanguageSelected('es')}}" (click)="changeLanguage('es')">Español</button>
+                            </li>
+                            <li lang="en">
+                                <button mat-button color="primary" disabled="{{isLanguageSelected('en')}}" (click)="changeLanguage('en')">English</button>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
+
             </nav>
         </div>
         <div>
