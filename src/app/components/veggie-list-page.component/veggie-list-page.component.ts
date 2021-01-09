@@ -15,7 +15,6 @@ export class VeggieListPageComponent implements OnInit {
 
   constructor(
     private zone:NgZone,
-    private helperService: HelperService,
     private translateService: TranslateService, 
     private veggieService:VeggieService) { }
 
@@ -43,7 +42,4 @@ export class VeggieListPageComponent implements OnInit {
     });
   }
 
-  clearFocus():void{
-    this.helperService.clearFocus();
-  }
 }

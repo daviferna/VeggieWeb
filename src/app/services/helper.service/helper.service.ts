@@ -18,6 +18,7 @@ export class HelperService {
   changeLanguage(language:string):void{
     this.translateService.use(language)
     this.document.documentElement.lang = this.translateService.currentLang;
+    this.clearFocus();
   }
 
   getCurrentLang():string{

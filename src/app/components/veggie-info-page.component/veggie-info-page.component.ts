@@ -16,7 +16,6 @@ export class VeggieInfoPageComponent implements OnInit {
   veggie? : CompleteVeggie;
 
   constructor(
-    private helperService: HelperService,
     private translateService: TranslateService, 
     private actRoute: ActivatedRoute,
     private veggieService:VeggieService) 
@@ -46,8 +45,5 @@ export class VeggieInfoPageComponent implements OnInit {
     });
   }
 
-  clearFocus():void{
-    this.helperService.clearFocus();
-  }
 
 }

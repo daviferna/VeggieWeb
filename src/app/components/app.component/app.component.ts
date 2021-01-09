@@ -1,5 +1,5 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
-import { ActivatedRoute} from '@angular/router';
+import { ActivatedRoute, NavigationEnd, NavigationStart, Router} from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { DOCUMENT } from '@angular/common'
 import { HelperService } from 'src/app/services/helper.service/helper.service';
@@ -15,14 +15,27 @@ export class AppComponent{
   @ViewChild("skipToContentTarget") skipToContentTarget?: ElementRef;
   @ViewChild("firstElementTarget") firstElementTarget?: ElementRef;
 
-  constructor(private router:ActivatedRoute, private helperService:HelperService) {
+  previousUrl:string ="";
+
+  constructor(private activateRoute:ActivatedRoute, private router :Router, private helperService:HelperService) {
     this.helperService.setDefaultLanguage('en');
     this.helperService.changeLanguage('es');  
 
-    this.router.fragment.subscribe(fragment=>{
-      if(!!fragment)
+    this.activateRoute.fragment.subscribe(fragment=>{
+      if(!!fragment){
         this.focusContentElement();
+      }
     });
+
+    this.router.events.subscribe(event=>{
+
+      if(event instanceof NavigationEnd){
+        if(this.previousUrl !== "" && event.url !== this.previousUrl+"#content"){
+          this.clearFocus();
+        }
+        this.previousUrl = event.url;
+      }
+    })
 
     this.helperService.onClearFocus.subscribe((targ:any)=>{
       this.clearFocus();
@@ -32,7 +45,6 @@ export class AppComponent{
 
   changeLanguage(language:string):void{
     this.helperService.changeLanguage(language); 
-    this.clearFocus();
   }
 
   isLanguageSelected(language:string):Boolean{
