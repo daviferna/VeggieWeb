@@ -1,28 +1,31 @@
-<div fxLayout="row" fxLayoutAlign="flex-end center">
-    <div id="skip" fxLayout="row" fxLayoutAlign="space-between center" class="horizontal-padding">
-        <a [routerLink]="" fragment="content" class="mat-body">{{'accessibility.skipToContent' | translate}}</a>
+<div class="mat-typography">
+    <div fxLayout="row" fxLayoutAlign="flex-end center">
+        <span #firstElementTarget tabindex="-1"></span>
+        <div id="skip" fxLayout="row" fxLayoutAlign="space-between center" class="horizontal-padding">
+            <a [routerLink]="" fragment="content" (click)="focusContentElement()">{{'accessibility.skipToContent' | translate}}</a>
+        </div>
+        <!-- Languages menu -->
+        <nav class="language-menu" fxLayout="row" fxLayoutAlign="flex-start center">
+            <header fxLayout="row" fxLayoutAlign="flex-start center">
+                <p class="no-padding">{{'navigation.languages' | translate}}</p>
+            </header>
+            <ul fxLayout="row" fxLayoutAlign="flex-start center">
+                <li lang="es">
+                    <button mat-button color="primary" disabled="{{isLanguageSelected('es')}}" (click)="changeLanguage('es')">Español</button>
+                </li>
+                <li lang="en">
+                    <button mat-button color="primary" disabled="{{isLanguageSelected('en')}}" (click)="changeLanguage('en')">English</button>
+                </li>
+            </ul>
+        </nav>
     </div>
-    <!-- Languages menu -->
-    <nav class="language-menu" fxLayout="row" fxLayoutAlign="flex-start center">
-        <header fxLayout="row" fxLayoutAlign="flex-start center">
-            <p class="mat-body">{{'navigation.languages' | translate}}</p>
-        </header>
-        <ul fxLayout="row" fxLayoutAlign="flex-start center">
-            <li lang="es">
-                <button mat-button color="primary" disabled="{{isLanguageSelected('es')}}" (click)="changeLanguage('es')">Español</button>
-            </li>
-            <li lang="en">
-                <button mat-button color="primary" disabled="{{isLanguageSelected('en')}}" (click)="changeLanguage('en')">English</button>
-            </li>
-        </ul>
-    </nav>
-</div>
 
-<header-component></header-component>
-<div fxLayout="column" fxLayoutAlign="flex-start center">
-    <div class="main-layout-content">
-        <router-outlet id="content"></router-outlet>    
+    <header-component></header-component>
+    <div fxLayout="column" fxLayoutAlign="flex-start center">
+        <main class="main-layout-content" id="content" #skipToContentTarget tabindex="0">
+            <router-outlet></router-outlet>    
+        </main>
     </div>
-</div>
 
-<footer-component></footer-component>
+    <footer-component></footer-component>
+</div>

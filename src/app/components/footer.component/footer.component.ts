@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+import { HelperService } from 'src/app/services/helper.service/helper.service';
 
 @Component({
   selector: 'footer-component',
@@ -8,17 +8,23 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor(private translateService: TranslateService) { }
+  constructor(private helperService:HelperService) { }
 
   ngOnInit(): void {
   }
 
   changeLanguage(language:string):void{
-    this.translateService.use(language);
+    this.helperService.changeLanguage(language); 
+    this.clearFocus();
   }
 
   isLanguageSelected(language:string):Boolean{
-    return this.translateService.currentLang == language;
+    return this.helperService.getCurrentLang() == language;
   }
+
+  clearFocus():void{
+    this.helperService.clearFocus();
+  }
+
 
 }
