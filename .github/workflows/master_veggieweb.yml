@@ -8,8 +8,14 @@ on:
     branches:
       - master
 
+env:
+  AZURE_WEBAPP_NAME: veggieweb    # set this to your application's name
+  AZURE_WEBAPP_PACKAGE_PATH: './dist/veggieweb'      # set this to the path to your web app project, defaults to the repository root
+  NODE_VERSION: '14.15.1' 
+
 jobs:
   build-and-deploy:
+    name: Build and Deploy
     runs-on: windows-latest
 
     steps:
@@ -18,18 +24,16 @@ jobs:
     - name: Set up Node.js version
       uses: actions/setup-node@v1
       with:
-        node-version: '14.x'
+        node-version: ${{ env.NODE_VERSION }}
 
-    - name: npm install, build, and test
+    - name: npm install, build
       run: |
         npm install
-        npm run build --if-present
-        npm run test --if-present
-
+        npm run build
     - name: 'Deploy to Azure Web App'
       uses: azure/webapps-deploy@v2
       with:
-        app-name: 'veggieweb'
+        app-name: ${{ env.AZURE_WEBAPP_NAME }}
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_f02bf85ef4e847eba511a2586f418744 }}
-        package: .
+        package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
