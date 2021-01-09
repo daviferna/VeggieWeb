@@ -13,7 +13,7 @@
         <div fxLayout="column" fxLayoutAlign="flex-start stretch" fxFlex="60">      
             <h3>{{'veggieInfoPage.description' | translate}}</h3>    
             <div class="veggie-photo">
-                <img [src]="veggie?.photoUrl"/>
+                <img [src]="veggie?.photoUrl" alt={{veggie?.photoDescription}}/>
             </div>
             <!-- Description -->
             <p>{{veggie?.description}} </p>   
