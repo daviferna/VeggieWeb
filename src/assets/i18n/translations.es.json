@@ -1,1 +1,99 @@
-{"accessibility":{"languageAria":"Idiomas","navigationAria":"Navegaci\u00F3n","skipToContent":"Saltar al contenido"},"contactPage":{"description":"Puedes usar este formulario para ponerte en contacto con nosotros y sugerir nuevas hortalizas para a\u00F1adir o realizar comentarios generales sobre la p\u00E1gina. De este modo, nos ayudas y ayudas a otras personas que visiten la p\u00E1gina en un futuro.","emailFormatError":"Por favor, introduce una direcci\u00F3n de correo electr\u00F3nico v\u00E1lida","emailInput":"Correo electr\u00F3nico","nameInput":"Nombre","otherComments":"Otros comentarios","requiredCommentError":"El comentario es un campo \u003Cstrong\u003Erequerido\u003C/strong\u003E","requiredEmailError":"El correo electr\u00F3nico es un campo \u003Cstrong\u003Erequerido\u003C/strong\u003E","requiredFieldHint":"Requerido","requiredNameError":"El nombre es un campo \u003Cstrong\u003Erequerido\u003C/strong\u003E","requiredTypeError":"El tipo de comentario es un campo \u003Cstrong\u003Erequerido\u003C/strong\u003E","submitButton":"Enviar comentario","submitFormInvalid":"No se pudo enviar el comentario, algunos de los campos no est\u00E1n correctamente cumplimentados.","submitFormValid":"Su comentario se han enviado correctamente. Muchas gracias.","suggestCorrection":"Sugerir correci\u00F3n","suggestionInput":"Comentario","suggestionSelector":"Tipo de comentario","suggestNewVeggie":"Sugerir nuevo vegetal","tabTitle":"VeggieWeb | Cont\u00E1ctanos","title":"Cont\u00E1ctanos"},"footer":{"copyright":"Copyright \u00A9 2021 VeggieWeb","languages":"Idiomas","navigation":"Navegaci\u00F3n","pageDescription":"Web hecha con amor, cafeina y muchos vegetales."},"homePage":{"aboutUs":{"directContactDescription":"Estamos a tu disposici\u00F3n para cualquier duda, consulta o sugerencia","directContactPhotoAlt":"Mujer trabajando con un ordenador portatil","directContactTitle":"Contacto directo","futureImprovementsDescription":"Pr\u00F3ximamente nuevas mejoran aterrizar\u00E1n en la web para quedarse","futureImprovementsPhotoAlt":"Mano sosteniendo un pincel sobre m\u00FAltiples botes de pintura","futureImprovementsTitle":"Mejoras y actualizaciones","manyVeggiesDescription":"A\u00F1adidos cada muy poquito tiempo para que siempre encuentres lo que necesites","manyVeggiesPhotoAlt":"Varias frutas, verduras y hiervas arom\u00E1ticas h\u00FAmedas sobre una mesa de madera","manyVeggiesTitle":"Vegetales en cantidad","title":"\u00BFQu\u00E9 encontrar\u00E1s en esta web?","veggiesClassificationDescription":"Para que puedas encontrarlos r\u00E1pido","veggiesClassificationPhotoAlt":"Varias carpetas y clasificadores de diferente color alineados","veggiesClassificationTitle":"Clasificados por tipo"},"description":"\u00A1Encuentra una amplia selecci\u00F3n de verduras, hortalizas y frutas!","readyToStart":"\u00BFEmpezamos?","readyToStartDescription":"Si est\u00E1s deseando mancharte las manos, entonces no hay mejor momento que ahora para empezar. \u00A1Revisa los vegetales que tenemos preparados para t\u00ED!","start":"\u00A1Empecemos!","startUsingVeggie":"Empecemos a usar Veggie! Ver listado de hortalizas","tabTitle":"VeggieWeb | Inicio","title":"Una web para todas las verduras, frutas y hortalizas","whyVeggieWeb":{"amazingHobbyDescription":"Disfruta del tiempo libre con esta increible actividad","amazingHobbyTitle":"Hobbie","easyInstructionsDescription":"Completas y detalladas paso por paso","easyInstructionsTitle":"F\u00E1cil","healthyLifestyleDescription":"Mejora tu estilo de vida comiendo sano","healthyLifestyleTitle":"Saludable","timeForYouDescription":"Ahorra tiempo sin tener que salir de casa","timeForYouTitle":"Ahorra tiempo","title":"\u00BFPor qu\u00E9 VeggieWeb?"}},"navigation":{"contact":"Contacto","home":"Inicio","languages":"Idiomas","sitemap":"Mapa del sitio","veggies":"Vegetales"},"veggieInfoPage":{"data":"Informaci\u00F3n","description":"Descripci\u00F3n","harvestSeasson":"Cosecha","instructions":"Instrucciones","instructionsDescription":"Las instrucciones permiten conocer los diferentes pasos a seguir para que el crecimiento sea correcto, leelos detenidamente y presta atenci\u00F3n a las condiciones.","maxHumidity":"Humedad Max.","maxTemperature":"Temperatura Max.","minHumidity":"Humedad Min.","minTemperature":"Temperatura Min.","seedSeasson":"Sembrado","veggieInfoProperty":"Propiedad","veggieInfoValue":"Valor"},"veggieListPage":{"contactUs":"Cont\u00E1ctanos","description":"\u00A1Prepara el huerto! Haz click en lo que m\u00E1s te guste y sigue las instruciones para empezar a cultivar por tu cuenta todo lo que quieras.","readMore":"Leer m\u00E1s","readMoreAbout":"Leer m\u00E1s sobre","tabTitle":"VeggieWeb | Vegetales","title":"Listado de vegetales","wantMoreDescription":"\u00BFNo encuentras lo que buscas? Vamos a\u00F1adiendo nuevos vegetales y actualizandolos poco a poco. Si quieres que el pr\u00F3ximo en la lista sea el que est\u00E1s pensando ahora mismo o has visto algo en lo que nos hemos equivocado, por favor, h\u00E1znoslo saber."}}
+{
+    "accessibility": {
+        "languageAria": "Idiomas",
+        "navigationAria": "Navegaci\u00F3n",
+        "skipToContent": "Saltar al contenido"
+    },
+    "contactPage": {
+        "description": "Puedes usar este formulario para ponerte en contacto con nosotros y sugerir nuevas hortalizas para a\u00F1adir o realizar comentarios generales sobre la p\u00E1gina. De este modo, nos ayudas y ayudas a otras personas que visiten la p\u00E1gina en un futuro.",
+        "emailFormatError": "Por favor, introduce una direcci\u00F3n de correo electr\u00F3nico v\u00E1lida",
+        "emailInput": "Correo electr\u00F3nico",
+        "nameInput": "Nombre",
+        "otherComments": "Otros comentarios",
+        "requiredCommentError": "El comentario es un campo \u003Cstrong\u003Erequerido\u003C/strong\u003E",
+        "requiredEmailError": "El correo electr\u00F3nico es un campo \u003Cstrong\u003Erequerido\u003C/strong\u003E",
+        "requiredFieldHint": "Requerido",
+        "requiredNameError": "El nombre es un campo \u003Cstrong\u003Erequerido\u003C/strong\u003E",
+        "requiredTypeError": "El tipo de comentario es un campo \u003Cstrong\u003Erequerido\u003C/strong\u003E",
+        "submitButton": "Enviar comentario",
+        "submitFormInvalid": "No se pudo enviar el comentario, algunos de los campos no est\u00E1n correctamente cumplimentados.",
+        "submitFormValid": "Su comentario se han enviado correctamente. Muchas gracias.",
+        "suggestCorrection": "Sugerir correci\u00F3n",
+        "suggestionInput": "Comentario",
+        "suggestionSelector": "Tipo de comentario",
+        "suggestNewVeggie": "Sugerir nuevo vegetal",
+        "tabTitle": "VeggieWeb | Cont\u00E1ctanos",
+        "title": "Cont\u00E1ctanos"
+    },
+    "footer": {
+        "copyright": "Copyright \u00A9 2021 VeggieWeb",
+        "languages": "Idiomas",
+        "navigation": "Navegaci\u00F3n",
+        "pageDescription": "Web hecha con amor, cafeina y muchos vegetales."
+    },
+    "homePage": {
+        "aboutUs": {
+            "directContactDescription": "Estamos a tu disposici\u00F3n para cualquier duda, consulta o sugerencia",
+            "directContactPhotoAlt": "Mujer trabajando con un ordenador portatil",
+            "directContactTitle": "Contacto directo",
+            "futureImprovementsDescription": "Pr\u00F3ximamente nuevas mejoran aterrizar\u00E1n en la web para quedarse",
+            "futureImprovementsPhotoAlt": "Mano sosteniendo un pincel sobre m\u00FAltiples botes de pintura",
+            "futureImprovementsTitle": "Mejoras y actualizaciones",
+            "manyVeggiesDescription": "A\u00F1adidos cada muy poquito tiempo para que siempre encuentres lo que necesites",
+            "manyVeggiesPhotoAlt": "Varias frutas, verduras y hiervas arom\u00E1ticas h\u00FAmedas sobre una mesa de madera",
+            "manyVeggiesTitle": "Vegetales en cantidad",
+            "title": "\u00BFQu\u00E9 encontrar\u00E1s en esta web?",
+            "veggiesClassificationDescription": "Para que puedas encontrarlos r\u00E1pido",
+            "veggiesClassificationPhotoAlt": "Varias carpetas y clasificadores de diferente color alineados",
+            "veggiesClassificationTitle": "Clasificados por tipo"
+        },
+        "description": "\u00A1Encuentra una amplia selecci\u00F3n de verduras, hortalizas y frutas!",
+        "readyToStart": "\u00BFEmpezamos?",
+        "readyToStartDescription": "Si est\u00E1s deseando mancharte las manos, entonces no hay mejor momento que ahora para empezar. \u00A1Revisa los vegetales que tenemos preparados para t\u00ED!",
+        "start": "\u00A1Empecemos!",
+        "startUsingVeggie": "Empecemos a usar Veggie! Ver listado de hortalizas",
+        "tabTitle": "VeggieWeb | Inicio",
+        "title": "Una web para todas las verduras, frutas y hortalizas",
+        "whyVeggieWeb": {
+            "amazingHobbyDescription": "Disfruta del tiempo libre con esta increible actividad",
+            "amazingHobbyTitle": "Hobbie",
+            "easyInstructionsDescription": "Completas y detalladas paso por paso",
+            "easyInstructionsTitle": "F\u00E1cil",
+            "healthyLifestyleDescription": "Mejora tu estilo de vida comiendo sano",
+            "healthyLifestyleTitle": "Saludable",
+            "timeForYouDescription": "Ahorra tiempo sin tener que salir de casa",
+            "timeForYouTitle": "Ahorra tiempo",
+            "title": "\u00BFPor qu\u00E9 VeggieWeb?"
+        }
+    },
+    "navigation": {
+        "contact": "Contacto",
+        "home": "Inicio",
+        "languages": "Idiomas",
+        "sitemap": "Mapa del sitio",
+        "veggies": "Vegetales"
+    },
+    "veggieInfoPage": {
+        "data": "Informaci\u00F3n",
+        "description": "Descripci\u00F3n",
+        "harvestSeasson": "Cosecha",
+        "instructions": "Instrucciones",
+        "instructionsDescription": "Las instrucciones permiten conocer los diferentes pasos a seguir para que el crecimiento sea correcto, leelos detenidamente y presta atenci\u00F3n a las condiciones.",
+        "maxHumidity": "Humedad Max.",
+        "maxTemperature": "Temperatura Max.",
+        "minHumidity": "Humedad Min.",
+        "minTemperature": "Temperatura Min.",
+        "seedSeasson": "Sembrado",
+        "veggieInfoProperty": "Propiedad",
+        "veggieInfoValue": "Valor"
+    },
+    "veggieListPage": {
+        "contactUs": "Cont\u00E1ctanos",
+        "description": "\u00A1Prepara el huerto! Haz click en lo que m\u00E1s te guste y sigue las instruciones para empezar a cultivar por tu cuenta todo lo que quieras.",
+        "readMore": "Leer m\u00E1s",
+        "readMoreAbout": "Leer m\u00E1s sobre",
+        "tabTitle": "VeggieWeb | Vegetales",
+        "title": "Listado de vegetales",
+        "wantMoreDescription": "\u00BFNo encuentras lo que buscas? Vamos a\u00F1adiendo nuevos vegetales y actualizandolos poco a poco. Si quieres que el pr\u00F3ximo en la lista sea el que est\u00E1s pensando ahora mismo o has visto algo en lo que nos hemos equivocado, por favor, h\u00E1znoslo saber."
+    }
+}
