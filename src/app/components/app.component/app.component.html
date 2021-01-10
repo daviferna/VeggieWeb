@@ -5,7 +5,7 @@
             <a [routerLink]="" fragment="content" (click)="focusContentElement()">{{'accessibility.skipToContent' | translate}}</a>
         </div>
         <!-- Languages menu -->
-        <nav class="language-menu" fxLayout="row" fxLayoutAlign="flex-start center">
+        <nav class="language-menu" fxLayout="row" fxLayoutAlign="flex-start center" attr.aria-label="{{'accesibility.languageAria' | translate}}">
             <header fxLayout="row" fxLayoutAlign="flex-start center">
                 <p class="no-padding">{{'navigation.languages' | translate}}</p>
             </header>

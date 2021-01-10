@@ -11,7 +11,7 @@
 
     <div fxLayout="column" fxLAyoutAlign="start-flex stretch" fxLayout.gt-xs="row" fxLayoutAlign.gt-x="flex-start flex-start" fxLayoutGap="20px">
         <div fxLayout="column" fxLayoutAlign="flex-start stretch" fxFlex="60">      
-            <h3>{{'veggieInfoPage.description' | translate}}</h3>    
+            <h2>{{'veggieInfoPage.description' | translate}}</h2>    
             <div class="veggie-photo">
                 <img [src]="veggie?.photoUrl" alt={{veggie?.photoDescription}}/>
             </div>
@@ -20,7 +20,7 @@
         </div>
         <div fxLayout="column" fxLayoutAlign="flex-start stretch" fxFlex="30">
             <!-- Veggie data -->
-            <h3>{{'veggieInfoPage.data' | translate}}</h3>
+            <h2>{{'veggieInfoPage.data' | translate}}</h2>
             <table>
                 <thead>
                         <td class="mat-body-strong">{{'veggieInfoPage.veggieInfoProperty' | translate}}</td>
@@ -56,7 +56,7 @@
         </div>
     </div>
     <!-- Instructions -->
-    <h3>{{'veggieInfoPage.instructions' | translate}}</h3>
+    <h2>{{'veggieInfoPage.instructions' | translate}}</h2>
     <p>{{'veggieInfoPage.instructionsDescription' | translate}}</p>
     <mat-accordion multi>
         <mat-expansion-panel *ngFor="let instruction of veggie?.plantInstructions">

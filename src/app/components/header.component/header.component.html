@@ -2,13 +2,12 @@
     <mat-toolbar color="primary" fxLayout="row" fxLayoutAlign="space-between center">     
         <!-- Logo & title -->
         <div>
-            <img>
             <span>VeggieWeb</span>
         </div>
         
         <div fxLayout="row" fxLayoutAlign="flex-start center">
             <!-- Navigation menu -->
-            <nav class="navigation-menu">
+            <nav class="navigation-menu" attr.aria-label="{{'accesibility.navigationAria' | translate}}">
                 <ul fxLayout="row" fxLayoutAlign="flex-start center">
                     <li><a mat-button routerLink="../home">{{'navigation.home' | translate}}</a></li>
                     <li><a mat-button routerLink="../veggie/list">{{'navigation.veggies' | translate}}</a></li>
