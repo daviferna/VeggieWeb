@@ -1,30 +1,39 @@
 {
     "id":0,
-    "name":"tomate",
-    "description":"Descripción española del tomate",
+    "name":"Tomate",
+    "description":"El tomate es la hortaliza de mayor importancia en el mundo. Se cultiva en todo el mundo, y se consume de múltiples maneras, tanto en crudo como procesado.",
     "photoUrl":"https://cdn.pixabay.com/photo/2018/07/06/08/49/tomato-3520004_960_720.jpg",
     "photoDescription":"Tres tomates rojos",
-    "plantSeasson":"Verano",
-    "harvestSeasson":"Invierno",
+    "plantSeasson":"Invierno",
+    "harvestSeasson":"Verano y otoño",
     "minHumidity":"20%",
     "maxHumidity":"30%",
     "minTemperature":"10º",
     "maxTemperature":"40º",
     "plantInstructions": [
         {
-            "title":"Primer paso",
-            "description":"Descripción primer paso",
-            "photoUrl":"https://cdn.pixabay.com/photo/2014/07/02/06/47/wheat-381848_960_720.jpg"
+            "title":"Elección de la variedad de tomate",
+            "description":"Lo primero que se debe hacer es elegir qué tipo de tomates se van a cultivar, pudiendo ser \"determinados\" o \"indeterminados\". Mientras que los tomates determinados tienen una planta compacta, y crecimiento limitado, ideal para macetas, los tomates indeterminados crecen continuamente y es necesario podarlos periódicamente.",
+            "photoUrl":"https://www.jardineriaon.com/wp-content/uploads/2017/07/Tomate_en_Ramo-830x553.jpg",
+            "photoDescription":"Matas de tomate en cultivo intensivo"
         },
         {
-            "title":"Segundo paso",
-            "description":"Descripción segundo paso",
-            "photoUrl":"https://cdn.pixabay.com/photo/2020/05/31/04/36/investment-5241253_960_720.jpg"
+            "title":"Sembrar los tomates",
+            "description":"La siembra de los tomates se debe realizar a partir de invierno, debiendo hacerse en un lugar protegido, como el interior de la casa o en un invernadero, preferiblemente en un semillero calefactado. Las semillas germinan en 7-10 días.",
+            "photoUrl":"https://agroislas.com/media/k2/items/cache/789ee11ba870d56adf4fe3a862f2d311_L.jpg",
+            "photoDescription":"Pequeñas plantas de tomate sembradas en macetas de interior"
         },
         {
-            "title":"Tercer paso",
-            "description":"Descripción tercer paso",
-            "photoUrl":"https://cdn.pixabay.com/photo/2016/08/03/01/09/carrot-1565597_960_720.jpg"
+            "title":"Transplantar los tomates",
+            "description":"Unos dos meses después de la siembra, se debe realizar un trasplante de los tomates a un lugar en el que las plantas vayan a estar más separadas, y con abono con muchos nutrientes.",
+            "photoUrl":"https://t2.ev.ltmcdn.com/es/posts/0/4/4/como_plantar_tomates_paso_a_paso_2440_1_600.jpg",
+            "photoDescription":"Trasplante de una mata de tomate de una maceta al suelo"
+        },
+        {
+            "title":"Recogida de los tomates",
+            "description":"Unos 4-5 meses después de realizar el trasplante, los tomates estarán listos para ser recolectados.",
+            "photoUrl":"https://cdn.pixabay.com/photo/2018/07/06/08/49/tomato-3520004_960_720.jpg",
+            "photoDescription":"Tres tomates rojos"
         }
     ] 
 }
