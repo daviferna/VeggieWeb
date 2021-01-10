@@ -1,6 +1,9 @@
 .main-title{
-    height: 300px;
-    background-color: #DDD;
+    padding: 20px 0;
+
+    h1{
+        width: 65%;
+    }
 }
 
 .why-veggieweb-section{
@@ -44,6 +47,12 @@
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .main-title{
+    
+        h1{
+            width: 100%;
+        }
+    }
 
     .home-item{
         grid-template-columns: repeat(1, 1fr);
