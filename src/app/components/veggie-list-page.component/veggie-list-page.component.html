@@ -19,7 +19,7 @@
                   <p>{{veggie.description}}</p>
                 </mat-card-content>
                 <mat-card-actions>
-                    <button mat-stroked-button color="primary" [routerLink]="['../../veggie', veggie.id]">{{'veggieListPage.readMore' | translate}}</button>
+                    <button mat-stroked-button color="primary" [routerLink]="['../../veggie', veggie.id]" attr.aria-label="{{'veggieListPage.readMoreAbout' | translate}} {{veggie.name}}">{{'veggieListPage.readMore' | translate}}</button>
                 </mat-card-actions>
               </mat-card>
         </li>
