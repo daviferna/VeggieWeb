@@ -67,7 +67,8 @@
           </mat-expansion-panel-header>
       
           <p>{{instruction.description}}</p>
-          <img [src]="instruction.photoUrl" class="instruction-photo"/>
+          
+          <img ng-if="instruction.photoUrl" [src]="instruction.photoUrl" class="instruction-photo" alt="{{instruction.photoDescription}}"/>
         </mat-expansion-panel>
       </mat-accordion>
 

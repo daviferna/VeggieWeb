@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { HomeData } from 'src/app/types/homeData';
 import { Title } from '@angular/platform-browser';
 
 @Component({
@@ -9,8 +8,6 @@ import { Title } from '@angular/platform-browser';
   styleUrls: ['./home-page.component.scss']
 })
 export class HomePageComponent implements OnInit {
-
-  homeData:HomeData[] = [];
 
   constructor(
     private translateService:TranslateService,

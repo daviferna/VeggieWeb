@@ -3,7 +3,7 @@
         <div fxLayout="column" fxLayoutAlign="flex-start stretch"
         fxLayout.gt-xs="row" fxLayoutAlign.gt-xs="space-between flex-start">
             <div>
-                <p class="mat-headline">VeggieWeb</p>
+                <h1 class="mat-headline">VeggieWeb</h1>
                 <p class="mat-body">{{'footer.pageDescription' | translate}}</p>
 
                 <div class="social">
@@ -32,7 +32,7 @@
 
             <div fxLayout="row" fxLayoutAlign="flex-start flex-start" fxLayoutGap="20px" class="footer-navigation">
                 <nav attr.aria-label="{{'accessibility.navigationAria' | translate}}-footer">
-                    <h3>{{'footer.navigation' | translate}}</h3>
+                    <h2>{{'footer.navigation' | translate}}</h2>
                     <ul>
                         <li><a routerLink="../home">{{'navigation.home' | translate}}</a></li>
                         <li><a routerLink="../veggie/list">{{'navigation.veggies' | translate}}</a></li>
@@ -43,13 +43,13 @@
 
                 <nav attr.aria-label="{{'accessibility.languageAria' | translate}}-footer">
 
-                    <h3>{{'footer.languages' | translate}}</h3>
+                    <h2>{{'footer.languages' | translate}}</h2>
                     <ul>
                         <li lang="es">
-                            <button mat-button color="primary" disabled="{{isLanguageSelected('es')}}" (click)="changeLanguage('es')">Español</button>
+                            <button type="button" mat-button color="primary" disabled="{{isLanguageSelected('es')}}" (click)="changeLanguage('es')">Español</button>
                         </li>
                         <li lang="en">
-                            <button mat-button color="primary" disabled="{{isLanguageSelected('en')}}" (click)="changeLanguage('en')">English</button>
+                            <button type="button" mat-button color="primary" disabled="{{isLanguageSelected('en')}}" (click)="changeLanguage('en')">English</button>
                         </li>
                     </ul>                    
                 </nav>

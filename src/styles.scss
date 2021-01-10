@@ -32,6 +32,22 @@ a{
     text-decoration: none;
 }
 
+.mat-error{
+    color:rgb(180, 0, 0);
+}
+
+.mat-form-field.mat-form-field-invalid .mat-form-field-label{
+    color: rgb(180, 0, 0); 
+}
+
+.mat-form-field-appearance-outline.mat-form-field-invalid.mat-form-field-invalid .mat-form-field-outline-thick{
+    color: rgb(180, 0, 0);
+}
+
+.mat-form-field.mat-form-field-invalid .mat-form-field-label .mat-form-field-required-marker{
+    color: rgb(180, 0, 0);
+}
+
 @media(max-width:900px){
     .content-section{
         padding: 10px;
