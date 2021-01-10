@@ -22,7 +22,7 @@ import { FooterComponent } from '../components/footer.component/footer.component
 //Services
 import { VeggieService } from '../services/veggie.service/veggie.service';
 import { ContactService } from '../services/contact.service/contact.service';
-import { HomeService } from '../services/home.service/home.service';
+import { HelperService } from '../services/helper.service/helper.service';
 
 
 @NgModule({
@@ -46,7 +46,7 @@ import { HomeService } from '../services/home.service/home.service';
   providers: [
     VeggieService,
     ContactService,
-    HomeService
+    HelperService
   ],
   bootstrap: [AppComponent]
 })

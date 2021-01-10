@@ -9,8 +9,10 @@
 .why-veggieweb-section{
     background: #3f51b5;
     background-image: url("https://cdn.pixabay.com/photo/2015/09/18/11/36/plantation-945400_960_720.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     margin:20px 0;
-    padding: 20px 0;
+    padding: 30px 30px;
     h2{
         color: #FFF;
     }
@@ -21,7 +23,7 @@
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
-    padding: 30px 10px;
+    padding: 20px 0;
 }
 
 .home-item{
@@ -34,6 +36,14 @@
         height: 200px;
         object-fit: cover;
     }
+}
+
+.ready-to-section{
+    padding: 50px;
+    margin:20px 0;
+    background-image: url("https://cdn.pixabay.com/photo/2015/07/02/10/19/bamboo-828703_960_720.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 @media(max-width:900px){

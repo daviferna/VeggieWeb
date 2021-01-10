@@ -6,59 +6,98 @@
     <div></div>
     <div fxLayout="column" fxLayoutAlign="flex-start stretch" class="why-veggieweb-section">
         <div class="horizontal-padding">
-            <h2>{{'homePage.whyVeggieWeb' | translate}}</h2>
+            <h2>{{'homePage.whyVeggieWeb.Title' | translate}}</h2>
         </div>
         <div class="why-veggieweb-reasons">
             <mat-card>
                 <mat-card-content>
                     <h3>
-                        <mat-card-title>Vida más sana</mat-card-title>
+                        <mat-card-title>{{'homePage.whyVeggieWeb.healthyLifestyleTitle' | translate}}</mat-card-title>
                     </h3>
-                <p>las verduras son bien sanitas y te ayudan</p>
+                <p>{{'homePage.whyVeggieWeb.healthyLifestyleDescription' | translate}}</p>
                 </mat-card-content>
             </mat-card>
             <mat-card>
                 <mat-card-content>
                     <h3>
-                        <mat-card-title>Más tiempo para tí</mat-card-title>
+                        <mat-card-title>{{'homePage.whyVeggieWeb.timeForYouTitle' | translate}}</mat-card-title>
                     </h3>
-                <p>Ahorra tiempo con nuestros consejos</p>
+                <p>{{'homePage.whyVeggieWeb.timeForYouDescription' | translate}}</p>
                 </mat-card-content>
             </mat-card>
             <mat-card>
                 <mat-card-content>
                     <h3>
-                        <mat-card-title>Tiempos de cultivo</mat-card-title>
+                        <mat-card-title>{{'homePage.whyVeggieWeb.easyInstructionsTitle' | translate}}</mat-card-title>
                     </h3>
-                <p>Encuentra los tiempos de cultivo perfectos</p>
+                <p>{{'homePage.whyVeggieWeb.easyInstructionsDescription' | translate}}</p>
                 </mat-card-content>
             </mat-card>
             <mat-card>
                 <mat-card-content>
                     <h3>
-                        <mat-card-title>Tiempos de cultivo</mat-card-title>
+                        <mat-card-title>{{'homePage.whyVeggieWeb.amazingHobbyTitle' | translate}}</mat-card-title>
                     </h3>
-                <p>Encuentra los tiempos de cultivo perfectos</p>
+                <p>{{'homePage.whyVeggieWeb.amazingHobbyDescription' | translate}}</p>
                 </mat-card-content>
             </mat-card>
         </div>
     </div>
 
     <div fxLayout="column" fxLayoutAlign="flex-start stretch">
-        <h2>{{'homePage.aboutUs' | translate}}</h2>
+        <h2>{{'homePage.aboutUs.title' | translate}}</h2>
         <div class="home-item">
-            <mat-card *ngFor="let homeDataItem of homeData">
-                <img mat-card-image [src]="homeDataItem.imageUrl" alt="homeDataItem.altPhoto">
+            <mat-card>
+                <img mat-card-image src="https://cdn.pixabay.com/photo/2016/08/11/08/04/vegetables-1584999_960_720.jpg" alt="{{'homePage.aboutUs.manyVeggiesPhotoAlt' | translate}}">
                 <mat-card-content>
                     <h3>
-                        <mat-card-title>{{homeDataItem.title}}</mat-card-title>
+                        <mat-card-title>{{'homePage.aboutUs.manyVeggiesTitle' | translate}}</mat-card-title>
                     </h3>
-                <p>{{homeDataItem.title}}</p>
+                <p>{{'homePage.aboutUs.manyVeggiesDescription' | translate}}</p>
                 </mat-card-content>
-                <mat-card-actions>
-                    <a mat-flat-button color="primary">{{'veggieListPage.readMore'}}</a>
-                </mat-card-actions>
+            </mat-card>
+
+            <mat-card>
+                <img mat-card-image src="https://cdn.pixabay.com/photo/2016/06/19/10/17/office-1466390_960_720.jpg" alt="{{'homePage.aboutUs.veggiesClassificationPhotoAlt' | translate}}">
+                <mat-card-content>
+                    <h3>
+                        <mat-card-title>{{'homePage.aboutUs.veggiesClassificationTitle' | translate}}</mat-card-title>
+                    </h3>
+                <p>{{'homePage.aboutUs.veggiesClassificationDescription' | translate}}</p>
+                </mat-card-content>
+            </mat-card>
+
+            <mat-card>
+                <img mat-card-image src="https://cdn.pixabay.com/photo/2016/02/07/21/03/computer-1185626_960_720.jpg" alt="{{'homePage.aboutUs.directContactPhotoAlt' | translate}}">
+                <mat-card-content>
+                    <h3>
+                        <mat-card-title>{{'homePage.aboutUs.directContactTitle' | translate}}</mat-card-title>
+                    </h3>
+                <p>{{'homePage.aboutUs.directContactDescription' | translate}}</p>
+                </mat-card-content>
+            </mat-card>
+
+            <mat-card>
+                <img mat-card-image src="https://cdn.pixabay.com/photo/2016/03/09/15/22/painter-1246619_960_720.jpg" alt="{{'homePage.aboutUs.futureImprovementsPhotoAlt' | translate}}">
+                <mat-card-content>
+                    <h3>
+                        <mat-card-title>{{'homePage.aboutUs.futureImprovementsTitle' | translate}}</mat-card-title>
+                    </h3>
+                <p>{{'homePage.aboutUs.futureImprovementsDescription' | translate}}</p>
+                </mat-card-content>
             </mat-card>
         </div>
+    </div>
+
+    <div fxLayout="column" fxLayoutAlign="center center" class="ready-to-section">
+        <mat-card fxFlex="nogrow">
+            <mat-card-content>
+                <h2 class="text-center">{{'homePage.readyToStart' | translate}}</h2>
+                <p class="text-center">{{'homePage.readyToStartDescription' | translate}}</p>
+                <div fxLayout="row" fxLayoutAlign="center center">
+                    <button mat-button color="primary" routerLink="../veggie/list">{{'homePage.start' | translate}}</button>
+                </div>
+            </mat-card-content>
+        </mat-card>      
     </div>
 </div>
