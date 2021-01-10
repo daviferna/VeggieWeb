@@ -1,30 +1,39 @@
 {
     "id":0,
     "name":"Tomato",
-    "description":"Tomate English description",
+    "description":"The tomato is the most important vegetable in the world. It is cultivated everywhere in the world, and consumed in multiple ways, both raw and processed.",
     "photoUrl":"https://cdn.pixabay.com/photo/2018/07/06/08/49/tomato-3520004_960_720.jpg",
     "photoDescription":"Three red tomatoes",
-    "plantSeasson":"Summer",
-    "harvestSeasson":"Winter",
+    "plantSeasson":"Winter",
+    "harvestSeasson":"Summer and Autumn",
     "minHumidity":"20%",
     "maxHumidity":"30%",
     "minTemperature":"10º",
     "maxTemperature":"40º",
     "plantInstructions": [
         {
-            "title":"First step",
-            "description":"First step description",
-            "photoUrl":"https://cdn.pixabay.com/photo/2014/07/02/06/47/wheat-381848_960_720.jpg"
+            "title":"Choose the tomato variety",
+            "description":"The first thing to do is to choose which type of tomatoes you are going to grow, which can be determined or undetermined. While determinate tomatoes have a compact plant, and limited growth, ideal for pots, indeterminate tomatoes grow continuously and need to be pruned periodically.",
+            "photoUrl": "https://www.jardineriaon.com/wp-content/uploads/2017/07/Tomate_en_Ramo-830x553.jpg",
+            "photoDescription": "Tomato plants in intensive cultivation"
         },
         {
-            "title":"Second step",
-            "description":"Second step description",
-            "photoUrl":"https://cdn.pixabay.com/photo/2020/05/31/04/36/investment-5241253_960_720.jpg"
+            "title":"Sowe the tomatoes",
+            "description":"Tomatoes should be sown from winter onwards, and should be planted in a protected place, such as the interior of the house or in a greenhouse, preferably in a heated seedbed. The seeds germinate in 7-10 days.",
+            "photoUrl":"https://agroislas.com/media/k2/items/cache/789ee11ba870d56adf4fe3a862f2d311_L.jpg",
+            "photoDescription":"Small tomato plants planted in indoor pots"
         },
         {
-            "title":"Third step",
-            "description":"Third step",
-            "photoUrl":"https://cdn.pixabay.com/photo/2016/08/03/01/09/carrot-1565597_960_720.jpg"
+            "title":"Transplanting the tomatoes",
+            "description":"About two months after planting, the tomatoes should be transplanted to a place where the plants will be more separated, and with fertilizer with many nutrients.",
+            "photoUrl":"https://t2.ev.ltmcdn.com/es/posts/0/4/4/como_plantar_tomates_paso_a_paso_2440_1_600.jpg",
+            "photoDescription":"Transplanting a tomato plant from a pot to the ground"
+        },
+        {
+            "title":"Harvesting the tomatoes",
+            "description":"About 4-5 months after transplanting, the tomatoes will be ready to be harvested.",
+            "photoUrl":"https://cdn.pixabay.com/photo/2018/07/06/08/49/tomato-3520004_960_720.jpg",
+            "photoDescription":"Three red tomatoes"
         }
     ] 
 }
