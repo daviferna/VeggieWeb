@@ -1,7 +1,7 @@
 {
     "id":0,
     "name":"Patata",
-    "description":"Descripción española de la patata",
+    "description":"La patata es uno de los cultivos más extendidos en todo el mundo. Su consumo puede ser dedicado a la alimentación humana en fresco, para alimentación del ganado y como materia prima para las industrias agroalimentarias.",
     "photoUrl":"https://cdn.pixabay.com/photo/2017/05/20/19/51/potatoes-2329648_960_720.jpg",
     "photoDescription":"Un conjunto de patatas",
     "plantSeasson":"Verano",
@@ -12,19 +12,28 @@
     "maxTemperature":"40º",
     "plantInstructions": [
         {
-            "title":"Primer paso",
-            "description":"Primer paso",
-            "photoUrl":""
+            "title":"Elección de la variedad de patata",
+            "description":"Lo primero que se debe hacer es elegir qué tipo de patatas se van a cultivar, pudiendo ser \"determinados\" o \"indeterminados\". Mientras que los patatas determinados tienen una planta compacta, y crecimiento limitado, ideal para macetas, las patatas indeterminados crecen continuamente y es necesario podarlos periódicamente.",
+            "photoUrl":"https://cdn.shopify.com/s/files/1/0064/2714/8335/articles/patatas_2_1024x.jpg?v=1580990158",
+            "photoDescription":"Matas de patata en cultivo intensivo"
         },
         {
-            "title":"Primer paso",
-            "description":"Segundo paso",
-            "photoUrl":""
+            "title":"Sembrar las patatas",
+            "description":"La siembra de las patatas se debe realizar a partir de invierno, debiendo hacerse en un lugar protegido, como el interior de la casa o en un invernadero, preferiblemente en un semillero calefactado. Las semillas germinan en 7-10 días.",
+            "photoUrl":"https://agroislas.com/media/k2/items/cache/789ee11ba870d56adf4fe3a862f2d311_L.jpg",
+            "photoDescription":"Pequeñas plantas de patata sembradas en macetas de interior"
         },
         {
-            "title":"Primer paso",
-            "description":"Tercer paso",
-            "photoUrl":""
+            "title":"Transplantar las patatas",
+            "description":"Unos dos meses después de la siembra, se debe realizar un trasplante de las patatas a un lugar en el que las plantas vayan a estar más separadas, y con abono con muchos nutrientes.",
+            "photoUrl":"https://t2.ev.ltmcdn.com/es/posts/0/4/4/como_plantar_tomates_paso_a_paso_2440_1_600.jpg",
+            "photoDescription":"Trasplante de una mata de patata de una maceta al suelo"
+        },
+        {
+            "title":"Recogida de las patatas",
+            "description":"Unos 4-5 meses después de realizar el trasplante, las patatas estarán listos para ser recolectados.",
+            "photoUrl":"https://cdn.pixabay.com/photo/2017/05/20/19/51/potatoes-2329648_960_720.jpg",
+            "photoDescription":"Un conjunto de patatas"
         }
     ] 
 }

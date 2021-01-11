@@ -2,7 +2,7 @@
     {
         "id":0,
         "name":"Tomato",
-        "type":"fruit",
+        "type":"Fruit",
         "description":"The tomato is the most important vegetable in the world. It is cultivated everywhere in the world, and consumed in multiple ways, both raw and processed.",
         "photoUrl":"https://cdn.pixabay.com/photo/2018/07/06/08/49/tomato-3520004_960_720.jpg",
         "photoDescription":"Three red tomatoes"
@@ -10,7 +10,7 @@
     {
         "id":1,
         "name":"Potato",
-        "type":"tuber",
+        "type":"Tuber",
         "description":"The potato is one of the most cultivated products in the world. Its consumption is intended for human feeding in fresh, for cattle feeding and as raw material for the food and agriculture processing industries.",
         "photoUrl":"https://cdn.pixabay.com/photo/2017/05/20/19/51/potatoes-2329648_960_720.jpg",
         "photoDescription":"A set of potatoes"
@@ -18,17 +18,25 @@
     {
         "id":2,
         "name":"Carrot",
-        "type":"tuber",
-        "description":"EThe carrot is one of the most cultivated vegetables in the world. Its consumption has spreaded widely, since it is available all the year round. The part of the carrot that we consume is its root, of which there are various shapes and tastes.",
+        "type":"Tuber",
+        "description":"The carrot is one of the most cultivated vegetables in the world. Its consumption has spreaded widely, since it is available all the year round. The part of the carrot that we consume is its root, of which there are various shapes and tastes.",
         "photoUrl":"https://cdn.pixabay.com/photo/2015/12/08/01/00/carrots-1082251_960_720.jpg",
         "photoDescription":"A set of carrots"
     },
     {
         "id":3,
         "name":"Lettuce",
-        "type":"vegetable",
+        "type":"Vegetable",
         "description":"The lettuce is a very popular vegetable which is cultivated for its large leaves; in some cases, these are pressed forming more or less compact core or heart. There are many varieties of this vegetable, and their number increases every year.",
         "photoUrl":"https://cdn.pixabay.com/photo/2018/07/24/23/19/salad-3560274_960_720.jpg",
         "photoDescription":"Some lettude leaves"
+    },
+    {
+        "id":3,
+        "name":"Eggplant",
+        "type":"Vegetable",
+        "description":"The eggplant is a delicate, tropical perennial plant often cultivated as a tender or half-hardy annual in temperate climates. The stem is often spiny. The flowers are white to purple in color, with a five-lobed corolla and yellow stamens.",
+        "photoUrl":"https://cdn.pixabay.com/photo/2018/10/19/13/47/eggplant-3758698_960_720.jpg",
+        "photoDescription":"A set of eggplants"
     }
 ]

@@ -2,7 +2,7 @@
     {
         "id":0,
         "name":"Tomate",
-        "type":"fruta",
+        "type":"Fruta",
         "description":"El tomate es la hortaliza de mayor importancia en el mundo. Se cultiva en todo el mundo, y se consume de múltiples maneras, tanto en crudo como procesado.",
         "photoUrl":"https://cdn.pixabay.com/photo/2018/07/06/08/49/tomato-3520004_960_720.jpg",
         "photoDescription":"Tres tomates rojos"
@@ -10,7 +10,7 @@
     {
         "id":1,
         "name":"Patata",
-        "type":"tubérculo",
+        "type":"Tubérculo",
         "description":"La patata es uno de los cultivos más extendidos en todo el mundo. Su consumo puede ser dedicado a la alimentación humana en fresco, para alimentación del ganado y como materia prima para las industrias agroalimentarias.",
         "photoUrl":"https://cdn.pixabay.com/photo/2017/05/20/19/51/potatoes-2329648_960_720.jpg",
         "photoDescription":"Un conjunto de patatas"
@@ -18,17 +18,25 @@
     {
         "id":2,
         "name":"Zanahoria",
-        "type":"tubérculo",
+        "type":"Tubérculo",
         "description":"La zanahoria es una de las hortalizas más cultivadas en el mundo. Su consumo se ha extendido ampliamente, ya que se encuentra disponible durante todo el año. La parte consumida de la zanahoria es su raíz, de la que existen múltiples formas y sabores.",
         "photoUrl":"https://cdn.pixabay.com/photo/2015/12/08/01/00/carrots-1082251_960_720.jpg",
         "photoDescription":"Un conjunto de zanahorias"
     },
     {
-        "id":2,
+        "id":3,
         "name":"Lechuga",
-        "type":"vedura",
+        "type":"Verdura",
         "description":"La lechuga es una hortaliza muy popular que se cultiva por sus grandes hojas que en algunos casos se aprietan formando repollos más o menos compactos. Existen muchísimas variedades de esta verdura, y el número aumenta cada año.",
         "photoUrl":"https://cdn.pixabay.com/photo/2018/07/24/23/19/salad-3560274_960_720.jpg",
         "photoDescription":"Unas hojas de lechuga"
+    },
+    {
+        "id":4,
+        "name":"Berenjena",
+        "type":"Verdura",
+        "description":"Hierba anual, a veces perennizante, espinosa, pubescente, con pelos estrellados. Tallos de 30-70(200) cm, erectos, ramificados, espinosos o inermes, estrellado- pubescentes.",
+        "photoUrl":"https://cdn.pixabay.com/photo/2018/10/19/13/47/eggplant-3758698_960_720.jpg",
+        "photoDescription":"Un conjunto de berenjenas"
     }
 ]

@@ -1,0 +1,39 @@
+{
+    "id":4,
+    "name":"Berenjena",
+    "description":"Hierba anual, a veces perennizante, espinosa, pubescente, con pelos estrellados. Tallos de 30-70(200) cm, erectos, ramificados, espinosos o inermes, estrellado- pubescentes. ",
+    "photoUrl":"https://cdn.pixabay.com/photo/2018/10/19/13/47/eggplant-3758698_960_720.jpg",
+    "photoDescription":"Un conjunto de berenjenas",
+    "plantSeasson":"Verano",
+    "harvestSeasson":"Invierno",
+    "minHumidity":"25%",
+    "maxHumidity":"35%",
+    "minTemperature":"5º",
+    "maxTemperature":"30º",
+    "plantInstructions": [
+        {
+            "title":"Elección de la variedad de berenjena",
+            "description":"Lo primero que se debe hacer es elegir qué tipo de berenjenas se van a cultivar, pudiendo ser \"determinados\" o \"indeterminados\". Mientras que los berenjenas determinados tienen una planta compacta, y crecimiento limitado, ideal para macetas, las berenjenas indeterminados crecen continuamente y es necesario podarlos periódicamente.",
+            "photoUrl":"https://www.afuegolento.com/img_db/varios/2020/01/img-5e21dadb4d1d5.jpg",
+            "photoDescription":"Matas de berenjena en cultivo intensivo"
+        },
+        {
+            "title":"Sembrar las berenjenas",
+            "description":"La siembra de las berenjenas se debe realizar a partir de invierno, debiendo hacerse en un lugar protegido, como el interior de la casa o en un invernadero, preferiblemente en un semillero calefactado. Las semillas germinan en 7-10 días.",
+            "photoUrl":"https://agroislas.com/media/k2/items/cache/789ee11ba870d56adf4fe3a862f2d311_L.jpg",
+            "photoDescription":"Pequeñas plantas de berenjena sembradas en macetas de interior"
+        },
+        {
+            "title":"Transplantar las berenjenas",
+            "description":"Unos dos meses después de la siembra, se debe realizar un trasplante de las berenjenas a un lugar en el que las plantas vayan a estar más separadas, y con abono con muchos nutrientes.",
+            "photoUrl":"https://t2.ev.ltmcdn.com/es/posts/0/4/4/como_plantar_tomates_paso_a_paso_2440_1_600.jpg",
+            "photoDescription":"Trasplante de una mata de berenjena de una maceta al suelo"
+        },
+        {
+            "title":"Recogida de las berenjenas",
+            "description":"Unos 4-5 meses después de realizar el trasplante, las berenjenas estarán listos para ser recolectados.",
+            "photoUrl":"https://cdn.pixabay.com/photo/2018/10/19/13/47/eggplant-3758698_960_720.jpg",
+            "photoDescription":"Un conjunto de berenjenas"
+        }
+    ] 
+}

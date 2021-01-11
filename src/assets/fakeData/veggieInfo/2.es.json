@@ -1,0 +1,39 @@
+{
+    "id":2,
+    "name":"Zanahoria",
+    "description":"La zanahoria es una de las hortalizas más cultivadas en el mundo. Su consumo se ha extendido ampliamente, ya que se encuentra disponible durante todo el año. La parte consumida de la zanahoria es su raíz, de la que existen múltiples formas y sabores.",
+    "photoUrl":"https://cdn.pixabay.com/photo/2015/12/08/01/00/carrots-1082251_960_720.jpg",
+    "photoDescription":"Un conjunto de zanahorias",
+    "plantSeasson":"Verano",
+    "harvestSeasson":"Invierno",
+    "minHumidity":"20%",
+    "maxHumidity":"30%",
+    "minTemperature":"10º",
+    "maxTemperature":"40º",
+    "plantInstructions": [
+        {
+            "title":"Elección de la variedad de zanahoria",
+            "description":"Lo primero que se debe hacer es elegir qué tipo de zanahorias se van a cultivar, pudiendo ser \"determinados\" o \"indeterminados\". Mientras que los zanahorias determinados tienen una planta compacta, y crecimiento limitado, ideal para macetas, las zanahorias indeterminados crecen continuamente y es necesario podarlos periódicamente.",
+            "photoUrl":"https://cocina-casera.com/wp-content/uploads/2018/05/zanahorias-1.jpg",
+            "photoDescription":"Matas de zanahoria en cultivo intensivo"
+        },
+        {
+            "title":"Sembrar las zanahorias",
+            "description":"La siembra de las zanahorias se debe realizar a partir de invierno, debiendo hacerse en un lugar protegido, como el interior de la casa o en un invernadero, preferiblemente en un semillero calefactado. Las semillas germinan en 7-10 días.",
+            "photoUrl":"https://agroislas.com/media/k2/items/cache/789ee11ba870d56adf4fe3a862f2d311_L.jpg",
+            "photoDescription":"Pequeñas plantas de zanahoria sembradas en macetas de interior"
+        },
+        {
+            "title":"Transplantar las zanahorias",
+            "description":"Unos dos meses después de la siembra, se debe realizar un trasplante de las zanahorias a un lugar en el que las plantas vayan a estar más separadas, y con abono con muchos nutrientes.",
+            "photoUrl":"https://t2.ev.ltmcdn.com/es/posts/0/4/4/como_plantar_tomates_paso_a_paso_2440_1_600.jpg",
+            "photoDescription":"Trasplante de una mata de zanahoria de una maceta al suelo"
+        },
+        {
+            "title":"Recogida de las zanahorias",
+            "description":"Unos 4-5 meses después de realizar el trasplante, las zanahorias estarán listos para ser recolectados.",
+            "photoUrl":"https://cdn.pixabay.com/photo/2015/12/08/01/00/carrots-1082251_960_720.jpg",
+            "photoDescription":"Un conjunto de zanahorias"
+        }
+    ] 
+}

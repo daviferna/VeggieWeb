@@ -1,0 +1,39 @@
+{
+    "id":3,
+    "name":"Lettuce",
+    "description":"The lettuce is a very popular vegetable which is cultivated for its large leaves; in some cases, these are pressed forming more or less compact core or heart. There are many varieties of this vegetable, and their number increases every year.",
+    "photoUrl":"https://cdn.pixabay.com/photo/2018/07/24/23/19/salad-3560274_960_720.jpg",
+    "photoDescription":"A set of lettuce",
+    "plantSeasson":"Summer",
+    "harvestSeasson":"Winter",
+    "minHumidity":"25%",
+    "maxHumidity":"35%",
+    "minTemperature":"5º",
+    "maxTemperature":"30º",
+    "plantInstructions": [
+        {
+            "title":"Choose the lettuce variety",
+            "description":"The first thing to do is to choose which type of lettuce you are going to grow, which can be determined or undetermined. While determinate lettuce have a compact plant, and limited growth, ideal for pots, indeterminate lettuce grow continuously and need to be pruned periodically.",
+            "photoUrl": "https://www.forksoverknives.com/wp-content/uploads/lettuce-iq.jpg",
+            "photoDescription": "Lettuce plants in intensive cultivation"
+        },
+        {
+            "title":"Sowe the lettuce",
+            "description":"lettuce should be sown from winter onwards, and should be planted in a protected place, such as the interior of the house or in a greenhouse, preferably in a heated seedbed. The seeds germinate in 7-10 days.",
+            "photoUrl":"https://agroislas.com/media/k2/items/cache/789ee11ba870d56adf4fe3a862f2d311_L.jpg",
+            "photoDescription":"Small lettuce plants planted in indoor pots"
+        },
+        {
+            "title":"Transplanting the lettuce",
+            "description":"About two months after planting, the tomatoes should be transplanted to a place where the plants will be more separated, and with fertilizer with many nutrients.",
+            "photoUrl":"https://t2.ev.ltmcdn.com/es/posts/0/4/4/como_plantar_tomates_paso_a_paso_2440_1_600.jpg",
+            "photoDescription":"Transplanting a lettuce plant from a pot to the ground"
+        },
+        {
+            "title":"Harvesting the lettuce",
+            "description":"About 4-5 months after transplanting, the lettuce will be ready to be harvested.",
+            "photoUrl":"https://cdn.pixabay.com/photo/2018/07/24/23/19/salad-3560274_960_720.jpg",
+            "photoDescription":"A set of lettuce"
+        }
+    ] 
+}

@@ -1,0 +1,39 @@
+{
+    "id":3,
+    "name":"Eggplant",
+    "description":"The eggplant is a delicate, tropical perennial plant often cultivated as a tender or half-hardy annual in temperate climates. The stem is often spiny. The flowers are white to purple in color, with a five-lobed corolla and yellow stamens.",
+    "photoUrl":"https://cdn.pixabay.com/photo/2018/10/19/13/47/eggplant-3758698_960_720.jpg",
+    "photoDescription":"A set of eggplants",
+    "plantSeasson":"Summer",
+    "harvestSeasson":"Winter",
+    "minHumidity":"25%",
+    "maxHumidity":"35%",
+    "minTemperature":"5º",
+    "maxTemperature":"30º",
+    "plantInstructions": [
+        {
+            "title":"Choose the eggplant variety",
+            "description":"The first thing to do is to choose which type of eggplant you are going to grow, which can be determined or undetermined. While determinate eggplant have a compact plant, and limited growth, ideal for pots, indeterminate eggplant grow continuously and need to be pruned periodically.",
+            "photoUrl": "https://www.afuegolento.com/img_db/varios/2020/01/img-5e21dadb4d1d5.jpg",
+            "photoDescription": "eggplant plants in intensive cultivation"
+        },
+        {
+            "title":"Sowe the eggplant",
+            "description":"eggplant should be sown from winter onwards, and should be planted in a protected place, such as the interior of the house or in a greenhouse, preferably in a heated seedbed. The seeds germinate in 7-10 days.",
+            "photoUrl":"https://agroislas.com/media/k2/items/cache/789ee11ba870d56adf4fe3a862f2d311_L.jpg",
+            "photoDescription":"Small eggplant plants planted in indoor pots"
+        },
+        {
+            "title":"Transplanting the eggplant",
+            "description":"About two months after planting, the tomatoes should be transplanted to a place where the plants will be more separated, and with fertilizer with many nutrients.",
+            "photoUrl":"https://t2.ev.ltmcdn.com/es/posts/0/4/4/como_plantar_tomates_paso_a_paso_2440_1_600.jpg",
+            "photoDescription":"Transplanting a eggplant plant from a pot to the ground"
+        },
+        {
+            "title":"Harvesting the eggplant",
+            "description":"About 4-5 months after transplanting, the eggplant will be ready to be harvested.",
+            "photoUrl":"https://cdn.pixabay.com/photo/2018/10/19/13/47/eggplant-3758698_960_720.jpg",
+            "photoDescription":"A set of eggplant"
+        }
+    ] 
+}

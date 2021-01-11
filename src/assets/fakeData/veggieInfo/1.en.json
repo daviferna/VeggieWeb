@@ -1,7 +1,7 @@
 {
     "id":0,
     "name":"Potato",
-    "description":"Potato English description",
+    "description":"The potato is one of the most cultivated products in the world. Its consumption is intended for human feeding in fresh, for cattle feeding and as raw material for the food and agriculture processing industries.",
     "photoUrl":"https://cdn.pixabay.com/photo/2017/05/20/19/51/potatoes-2329648_960_720.jpg",
     "photoDescription":"A set of potatoes",
     "plantSeasson":"Summer",
@@ -12,19 +12,28 @@
     "maxTemperature":"40º",
     "plantInstructions": [
         {
-            "title":"First step",
-            "description":"First step",
-            "photoUrl":"https://cdn.pixabay.com/photo/2014/07/02/06/47/wheat-381848_960_720.jpg"
+            "title":"Choose the potato variety",
+            "description":"The first thing to do is to choose which type of potatoes you are going to grow, which can be determined or undetermined. While determinate potatoes have a compact plant, and limited growth, ideal for pots, indeterminate potatoes grow continuously and need to be pruned periodically.",
+            "photoUrl": "https://cdn.shopify.com/s/files/1/0064/2714/8335/articles/patatas_2_1024x.jpg?v=1580990158",
+            "photoDescription": "POtato plants in intensive cultivation"
         },
         {
-            "title":"First step",
-            "description":"Second step",
-            "photoUrl":""
+            "title":"Sowe the potatoes",
+            "description":"Potatoes should be sown from winter onwards, and should be planted in a protected place, such as the interior of the house or in a greenhouse, preferably in a heated seedbed. The seeds germinate in 7-10 days.",
+            "photoUrl":"https://agroislas.com/media/k2/items/cache/789ee11ba870d56adf4fe3a862f2d311_L.jpg",
+            "photoDescription":"Small potato plants planted in indoor pots"
         },
         {
-            "title":"First step",
-            "description":"Third step",
-            "photoUrl":""
+            "title":"Transplanting the potatoes",
+            "description":"About two months after planting, the tomatoes should be transplanted to a place where the plants will be more separated, and with fertilizer with many nutrients.",
+            "photoUrl":"https://t2.ev.ltmcdn.com/es/posts/0/4/4/como_plantar_tomates_paso_a_paso_2440_1_600.jpg",
+            "photoDescription":"Transplanting a potato plant from a pot to the ground"
+        },
+        {
+            "title":"Harvesting the potatoes",
+            "description":"About 4-5 months after transplanting, the potatoes will be ready to be harvested.",
+            "photoUrl":"https://cdn.pixabay.com/photo/2017/05/20/19/51/potatoes-2329648_960_720.jpg",
+            "photoDescription":"A set of potatoes"
         }
     ] 
 }
